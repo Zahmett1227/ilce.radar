@@ -123,10 +123,15 @@ export default function ResultScreen({
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
         className="w-full max-w-[720px] px-4 py-6 sm:py-10"
       >
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl ring-1 ring-white/10 backdrop-blur-xl sm:p-8 md:p-10">
-          <h2 className="text-center text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-            Sana En Uygun 5 İlçe
-          </h2>
+        <div className="rounded-3xl border border-white/8 bg-white/[0.03] p-6 shadow-2xl shadow-black/25 ring-1 ring-white/8 backdrop-blur-xl sm:p-8 md:p-10">
+          <div className="text-center">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-600">
+              Kişisel Öneri
+            </p>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+              Sana En Uygun İlçeler
+            </h2>
+          </div>
 
           {allDistricts?.length > 0 && districts.length > 0 && (
             <div className="mt-6">

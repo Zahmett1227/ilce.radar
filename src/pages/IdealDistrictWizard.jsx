@@ -171,12 +171,22 @@ export default function IdealDistrictWizard() {
     currentQuestion != null ? answers[currentQuestion.key] : null
 
   return (
-    <div className="min-h-svh bg-gradient-to-b from-slate-950 via-[#0a1020] to-slate-950 text-slate-100">
+    <div className="min-h-svh bg-[#050810] text-slate-100">
+      {/* Dot grid */}
       <div
-        className="pointer-events-none fixed inset-0 opacity-40"
+        className="pointer-events-none fixed inset-0"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(148,163,184,0.055) 1px, transparent 1px)',
+          backgroundSize: '32px 32px',
+        }}
+        aria-hidden
+      />
+      {/* Glow orbs */}
+      <div
+        className="pointer-events-none fixed inset-0"
         style={{
           background:
-            'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(52, 211, 153, 0.25), transparent), radial-gradient(ellipse 60% 40% at 100% 0%, rgba(34, 211, 238, 0.12), transparent)',
+            'radial-gradient(ellipse 70% 45% at 50% -10%, rgba(52,211,153,0.18), transparent), radial-gradient(ellipse 50% 35% at 100% 0%, rgba(34,211,238,0.08), transparent)',
         }}
         aria-hidden
       />

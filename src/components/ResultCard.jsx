@@ -84,23 +84,23 @@ export default function ResultCard({
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: motionIndex * 0.06, duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-      className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl ring-1 ring-white/10 backdrop-blur-xl"
+      className="overflow-hidden rounded-3xl border border-white/8 bg-white/[0.03] shadow-xl shadow-black/20 ring-1 ring-white/8 backdrop-blur-xl"
     >
       <div className="p-5 sm:p-6">
         <div className="flex gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400/30 to-cyan-500/20 text-lg font-bold text-white ring-1 ring-emerald-400/40">
+          <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border text-sm font-semibold tabular-nums ${rank === 1 ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300' : rank <= 3 ? 'border-white/15 text-slate-300' : 'border-white/10 text-slate-500'}`}>
             {rank}
           </div>
           <div className="min-w-0 flex-1">
-            <h3 className="truncate text-lg font-semibold text-white sm:text-xl">
+            <h3 className="truncate text-lg font-semibold tracking-tight text-white sm:text-xl">
               {ilceName}
             </h3>
-            <p className="text-sm text-slate-400">{ilName}</p>
-            <p className="mt-2 text-sm text-emerald-300/90">
-              Eşleşme skoru:{' '}
-              <span className="font-semibold tabular-nums text-white">{score}</span>
-              <span className="text-slate-500">/100</span>
-            </p>
+            <p className="text-[13px] text-slate-500">{ilName}</p>
+            <div className="mt-2 flex items-baseline gap-1">
+              <span className="text-[13px] text-slate-500">Eşleşme</span>
+              <span className="font-semibold tabular-nums text-emerald-300">{score}</span>
+              <span className="text-[11px] text-slate-600">/100</span>
+            </div>
           </div>
           <div className="flex shrink-0 self-start gap-1">
             {toggleComparison && (
@@ -140,19 +140,19 @@ export default function ResultCard({
           </div>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-3.5 flex flex-wrap gap-1.5">
           {displayBadges.map((b) => (
             <span
               key={b}
-              className="rounded-full border border-white/10 bg-slate-900/50 px-3 py-1 text-xs text-slate-300"
+              className="rounded-full border border-white/8 bg-white/[0.03] px-2.5 py-1 text-[11px] font-medium text-slate-500"
             >
               {b}
             </span>
           ))}
         </div>
 
-        <div className="mt-5 rounded-2xl border border-white/10 bg-slate-950/35 p-4">
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+        <div className="mt-5 rounded-2xl border border-white/8 bg-slate-950/25 p-4">
+          <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-600">
             Neden önerildi?
           </p>
           <ul className="mt-2 space-y-2">
@@ -169,8 +169,8 @@ export default function ResultCard({
           </ul>
         </div>
 
-        <div className="mt-4 rounded-2xl border border-amber-500/25 bg-amber-500/5 p-4 ring-1 ring-amber-400/15">
-          <p className="text-xs font-semibold uppercase tracking-wide text-amber-200/90">
+        <div className="mt-3.5 rounded-2xl border border-amber-500/15 bg-amber-500/[0.04] p-4">
+          <p className="text-[10px] font-semibold uppercase tracking-widest text-amber-400/60">
             Taviz verdiğin alan
           </p>
           <ul className="mt-2 space-y-1.5 text-sm leading-snug text-amber-100/90">
@@ -183,7 +183,7 @@ export default function ResultCard({
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-900/40 py-3 text-sm font-medium text-slate-200 transition hover:bg-slate-800/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+          className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-white/8 bg-transparent py-2.5 text-[12px] font-medium text-slate-500 transition hover:border-white/15 hover:text-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
         >
           {open ? 'Detayları gizle' : 'Detayları göster'}
           <ChevronDown
