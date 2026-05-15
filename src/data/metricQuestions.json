@@ -1,0 +1,44 @@
+[
+  {
+    "key": "socialCulture",
+    "title": "Sosyal ve kültürel imkanlar",
+    "question": "Sosyal imkanlar ve kültürel düzey senin için ne kadar önemli?",
+    "description": "SEGE temelli sosyal/kültürel skor. 20 iyi, 0 zayıf.",
+    "scoreColumn": "social_culture_score_20"
+  },
+  {
+    "key": "seaAccess",
+    "title": "Denize yakınlık",
+    "question": "Denize yakınlık senin için ne kadar önemli?",
+    "description": "Kıyı/ada ilçeler yüksek; iç ilçeler daha düşük puanlı.",
+    "scoreColumn": "sea_access_score_20"
+  },
+  {
+    "key": "earthquakeSafety",
+    "title": "Deprem güvenliği",
+    "question": "Deprem riskinin düşük olması senin için ne kadar önemli?",
+    "description": "Deprem risk bandı ters puanlandı. 20 daha güvenli.",
+    "scoreColumn": "earthquake_safety_score_20"
+  },
+  {
+    "key": "lowCrowding",
+    "title": "Kalabalık olmaması",
+    "question": "Daha sakin ve az kalabalık bir ilçe senin için ne kadar önemli?",
+    "description": "Nüfus baskısı ters puanlandı. 20 daha sakin/az kalabalık.",
+    "scoreColumn": "low_crowding_score_20"
+  },
+  {
+    "key": "lowJudicialIntensity",
+    "title": "Adli olay yoğunluğunun düşük olması",
+    "question": "Adli olay yoğunluğunun düşük olması senin için ne kadar önemli?",
+    "description": "Adalet Bakanlığı İBBS-1 bölge verisi proxy’si. İlçe bazlı kesin suç oranı değildir.",
+    "scoreColumn": "judicial_low_event_score_20"
+  },
+  {
+    "key": "affordability",
+    "title": "Pahalılığın düşük olması",
+    "question": "Kira/satılık konut pahalılığının düşük olması senin için ne kadar önemli?",
+    "description": "Endeksa konut göstergeleri ters puanlandı. En pahalı yerler düşük puan aldı.",
+    "scoreColumn": "affordability_score_20"
+  }
+]
