@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Check, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowLeftRight, Bookmark, Check, ChevronDown, ExternalLink } from 'lucide-react'
 import ScoreBar from './ScoreBar.jsx'
+import RadarChart from './RadarChart.jsx'
 import {
   formatPopulation,
   formatScore,
@@ -9,11 +10,13 @@ import {
   formatTRYPerM2,
 } from '../utils/formatters.js'
 import {
+  findSimilarDistricts,
   generateRecommendationReasons,
   getScoreBreakdown,
   getTradeOffs,
   safeNumber,
 } from '../utils/scoring.js'
+import { districtKey } from '../hooks/useFavorites.js'
 
 function badgeText(label, value) {
   if (value === null || value === undefined || value === '') return null
@@ -26,11 +29,19 @@ export default function ResultCard({
   answers,
   questions,
   motionIndex,
+  allDistricts,
+  isFavorite,
+  toggleFavorite,
+  inComparisonSet,
+  comparisonFull,
+  toggleComparison,
 }) {
   const [open, setOpen] = useState(false)
   const ilceName = district.ilce ?? district.full_name ?? 'İlçe'
   const ilName = district.il ?? ''
   const score = formatScore(district.user_score_100)
+  const key = districtKey(district)
+  const favorited = isFavorite ? isFavorite(key) : false
 
   const badges = [
     badgeText('Deniz', district.sea_category),
@@ -45,6 +56,11 @@ export default function ResultCard({
   const breakdown = getScoreBreakdown(district, questions)
   const reasons = generateRecommendationReasons(district, answers, questions)
   const tradeOffs = getTradeOffs(district, answers, questions)
+
+  const similarDistricts = useMemo(() => {
+    if (!allDistricts || allDistricts.length === 0 || !open) return []
+    return findSimilarDistricts(district, allDistricts, questions, 4)
+  }, [district, allDistricts, questions, open])
 
   const searchQuery = encodeURIComponent(
     `${ilceName} ${ilName} ilçe`.replace(/\s+/g, ' ').trim(),
@@ -85,6 +101,42 @@ export default function ResultCard({
               <span className="font-semibold tabular-nums text-white">{score}</span>
               <span className="text-slate-500">/100</span>
             </p>
+          </div>
+          <div className="flex shrink-0 self-start gap-1">
+            {toggleComparison && (
+              <button
+                type="button"
+                onClick={() => toggleComparison(key)}
+                disabled={comparisonFull && !inComparisonSet}
+                title={inComparisonSet ? 'Karşılaştırmadan çıkar' : 'Karşılaştırmaya ekle'}
+                aria-label={inComparisonSet ? 'Karşılaştırmadan çıkar' : 'Karşılaştırmaya ekle'}
+                aria-pressed={inComparisonSet}
+                className={`flex h-10 w-10 items-center justify-center rounded-xl border transition focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 ${
+                  inComparisonSet
+                    ? 'border-cyan-500/40 bg-cyan-500/15 text-cyan-300'
+                    : comparisonFull
+                      ? 'cursor-not-allowed border-white/10 bg-slate-900/40 text-slate-700'
+                      : 'border-white/10 bg-slate-900/40 text-slate-500 hover:bg-slate-800/60 hover:text-slate-300'
+                }`}
+              >
+                <ArrowLeftRight className="h-4 w-4" strokeWidth={1.75} aria-hidden />
+              </button>
+            )}
+            {toggleFavorite && (
+              <button
+                type="button"
+                onClick={() => toggleFavorite(key)}
+                aria-label={favorited ? 'Favorilerden çıkar' : 'Favorilere ekle'}
+                aria-pressed={favorited}
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900/40 transition hover:bg-slate-800/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70"
+              >
+                <Bookmark
+                  className={`h-4 w-4 transition-colors ${favorited ? 'fill-emerald-400 text-emerald-400' : 'text-slate-500'}`}
+                  strokeWidth={1.75}
+                  aria-hidden
+                />
+              </button>
+            )}
           </div>
         </div>
 
@@ -150,6 +202,11 @@ export default function ResultCard({
               className="overflow-hidden"
             >
               <div className="mt-5 space-y-4 border-t border-white/10 pt-5">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  Puan dağılımı
+                </p>
+                <RadarChart breakdown={breakdown} />
+
                 {breakdown.map((row) => (
                   <ScoreBar
                     key={row.key}
@@ -191,6 +248,35 @@ export default function ResultCard({
                     <p className="text-xs leading-relaxed text-slate-500">{listingNote}</p>
                   ) : null}
                 </div>
+
+                {similarDistricts.length > 0 && (
+                  <div className="border-t border-white/10 pt-4">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      Buna benzer ilçeler
+                    </p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {similarDistricts.map((sim, idx) => {
+                        const simIlce = sim.ilce ?? sim.full_name ?? 'İlçe'
+                        const simIl = sim.il ?? ''
+                        const simScore = formatScore(sim.default_overall_score_100)
+                        return (
+                          <span
+                            key={`sim-${simIlce}-${idx}`}
+                            className="rounded-xl border border-white/10 bg-slate-900/40 px-3 py-2 text-xs text-slate-300"
+                          >
+                            <span className="font-medium text-slate-100">{simIlce}</span>
+                            {simIl ? (
+                              <span className="text-slate-500"> / {simIl}</span>
+                            ) : null}
+                            <span className="ml-1.5 tabular-nums text-emerald-400/80">
+                              {simScore}
+                            </span>
+                          </span>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
 
                 <div className="flex flex-wrap gap-2 border-t border-white/10 pt-4">
                   <a

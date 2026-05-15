@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-13T16:11:00.722Z",
-  "rowCount": 186,
+  "generatedAt": "2026-05-15T19:10:18.394Z",
+  "rowCount": 229,
   "districts": [
     {
-      "district_id": null,
+      "district_id": "trabzon-ortahisar",
       "il": "Trabzon",
       "ilce": "Ortahisar",
       "full_name": "Trabzon / Ortahisar",
@@ -35,7 +35,7 @@
       "lng": 39.7178
     },
     {
-      "district_id": null,
+      "district_id": "samsun-atakum",
       "il": "Samsun",
       "ilce": "Atakum",
       "full_name": "Samsun / Atakum",
@@ -67,7 +67,7 @@
       "lng": 36.2477
     },
     {
-      "district_id": null,
+      "district_id": "samsun-ilkadim",
       "il": "Samsun",
       "ilce": "İlkadım",
       "full_name": "Samsun / İlkadım",
@@ -99,7 +99,7 @@
       "lng": 36.33
     },
     {
-      "district_id": null,
+      "district_id": "canakkale-bozcaada",
       "il": "Çanakkale",
       "ilce": "Bozcaada",
       "full_name": "Çanakkale / Bozcaada",
@@ -131,7 +131,7 @@
       "lng": 26.0667
     },
     {
-      "district_id": null,
+      "district_id": "tekirdag-suleymanpasa",
       "il": "Tekirdağ",
       "ilce": "Süleymanpaşa",
       "full_name": "Tekirdağ / Süleymanpaşa",
@@ -163,7 +163,7 @@
       "lng": 27.5167
     },
     {
-      "district_id": null,
+      "district_id": "canakkale-merkez",
       "il": "Çanakkale",
       "ilce": "Merkez",
       "full_name": "Çanakkale / Merkez",
@@ -195,7 +195,7 @@
       "lng": 26.4142
     },
     {
-      "district_id": null,
+      "district_id": "izmir-balcova",
       "il": "İzmir",
       "ilce": "Balçova",
       "full_name": "İzmir / Balçova",
@@ -227,7 +227,7 @@
       "lng": 27.0603
     },
     {
-      "district_id": null,
+      "district_id": "mersin-yenisehir",
       "il": "Mersin",
       "ilce": "Yenişehir",
       "full_name": "Mersin / Yenişehir",
@@ -259,7 +259,7 @@
       "lng": 34.6415
     },
     {
-      "district_id": null,
+      "district_id": "izmir-konak",
       "il": "İzmir",
       "ilce": "Konak",
       "full_name": "İzmir / Konak",
@@ -291,7 +291,7 @@
       "lng": 27.1287
     },
     {
-      "district_id": null,
+      "district_id": "kocaeli-basiskele",
       "il": "Kocaeli",
       "ilce": "Başiskele",
       "full_name": "Kocaeli / Başiskele",
@@ -323,7 +323,7 @@
       "lng": 29.8833
     },
     {
-      "district_id": null,
+      "district_id": "antalya-konyaalti",
       "il": "Antalya",
       "ilce": "Konyaaltı",
       "full_name": "Antalya / Konyaaltı",
@@ -355,7 +355,7 @@
       "lng": 30.6281
     },
     {
-      "district_id": null,
+      "district_id": "antalya-kemer",
       "il": "Antalya",
       "ilce": "Kemer",
       "full_name": "Antalya / Kemer",
@@ -387,7 +387,7 @@
       "lng": 30.5592
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-fatih",
       "il": "İstanbul",
       "ilce": "Fatih",
       "full_name": "İstanbul / Fatih",
@@ -419,7 +419,7 @@
       "lng": 28.9497
     },
     {
-      "district_id": null,
+      "district_id": "antalya-manavgat",
       "il": "Antalya",
       "ilce": "Manavgat",
       "full_name": "Antalya / Manavgat",
@@ -451,7 +451,7 @@
       "lng": 31.4438
     },
     {
-      "district_id": null,
+      "district_id": "aydin-kusadasi",
       "il": "Aydın",
       "ilce": "Kuşadası",
       "full_name": "Aydın / Kuşadası",
@@ -483,7 +483,7 @@
       "lng": 27.26
     },
     {
-      "district_id": null,
+      "district_id": "antalya-muratpasa",
       "il": "Antalya",
       "ilce": "Muratpaşa",
       "full_name": "Antalya / Muratpaşa",
@@ -515,7 +515,7 @@
       "lng": 30.7133
     },
     {
-      "district_id": null,
+      "district_id": "mugla-marmaris",
       "il": "Muğla",
       "ilce": "Marmaris",
       "full_name": "Muğla / Marmaris",
@@ -547,7 +547,7 @@
       "lng": 28.2719
     },
     {
-      "district_id": null,
+      "district_id": "izmir-cigli",
       "il": "İzmir",
       "ilce": "Çiğli",
       "full_name": "İzmir / Çiğli",
@@ -579,7 +579,7 @@
       "lng": 27.0467
     },
     {
-      "district_id": null,
+      "district_id": "tekirdag-corlu",
       "il": "Tekirdağ",
       "ilce": "Çorlu",
       "full_name": "Tekirdağ / Çorlu",
@@ -611,7 +611,7 @@
       "lng": 27.8031
     },
     {
-      "district_id": null,
+      "district_id": "kocaeli-gebze",
       "il": "Kocaeli",
       "ilce": "Gebze",
       "full_name": "Kocaeli / Gebze",
@@ -643,7 +643,7 @@
       "lng": 29.4306
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-besiktas",
       "il": "İstanbul",
       "ilce": "Beşiktaş",
       "full_name": "İstanbul / Beşiktaş",
@@ -675,7 +675,7 @@
       "lng": 29.0061
     },
     {
-      "district_id": null,
+      "district_id": "kocaeli-izmit",
       "il": "Kocaeli",
       "ilce": "İzmit",
       "full_name": "Kocaeli / İzmit",
@@ -707,7 +707,7 @@
       "lng": 29.9408
     },
     {
-      "district_id": null,
+      "district_id": "mugla-fethiye",
       "il": "Muğla",
       "ilce": "Fethiye",
       "full_name": "Muğla / Fethiye",
@@ -739,7 +739,7 @@
       "lng": 29.1228
     },
     {
-      "district_id": null,
+      "district_id": "erzurum-yakutiye",
       "il": "Erzurum",
       "ilce": "Yakutiye",
       "full_name": "Erzurum / Yakutiye",
@@ -771,7 +771,7 @@
       "lng": 41.27
     },
     {
-      "district_id": null,
+      "district_id": "antalya-alanya",
       "il": "Antalya",
       "ilce": "Alanya",
       "full_name": "Antalya / Alanya",
@@ -803,7 +803,7 @@
       "lng": 32.0058
     },
     {
-      "district_id": null,
+      "district_id": "izmir-bornova",
       "il": "İzmir",
       "ilce": "Bornova",
       "full_name": "İzmir / Bornova",
@@ -835,7 +835,7 @@
       "lng": 27.2181
     },
     {
-      "district_id": null,
+      "district_id": "mugla-bodrum",
       "il": "Muğla",
       "ilce": "Bodrum",
       "full_name": "Muğla / Bodrum",
@@ -867,7 +867,7 @@
       "lng": 27.4305
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-beyoglu",
       "il": "İstanbul",
       "ilce": "Beyoğlu",
       "full_name": "İstanbul / Beyoğlu",
@@ -899,7 +899,7 @@
       "lng": 28.9772
     },
     {
-      "district_id": null,
+      "district_id": "kirikkale-yahsihan",
       "il": "Kırıkkale",
       "ilce": "Yahşihan",
       "full_name": "Kırıkkale / Yahşihan",
@@ -931,7 +931,7 @@
       "lng": 33.55
     },
     {
-      "district_id": null,
+      "district_id": "izmir-narlidere",
       "il": "İzmir",
       "ilce": "Narlıdere",
       "full_name": "İzmir / Narlıdere",
@@ -963,7 +963,7 @@
       "lng": 26.9931
     },
     {
-      "district_id": null,
+      "district_id": "izmir-karsiyaka",
       "il": "İzmir",
       "ilce": "Karşıyaka",
       "full_name": "İzmir / Karşıyaka",
@@ -995,7 +995,7 @@
       "lng": 27.11
     },
     {
-      "district_id": null,
+      "district_id": "izmir-bayrakli",
       "il": "İzmir",
       "ilce": "Bayraklı",
       "full_name": "İzmir / Bayraklı",
@@ -1027,7 +1027,7 @@
       "lng": 27.1597
     },
     {
-      "district_id": null,
+      "district_id": "izmir-guzelbahce",
       "il": "İzmir",
       "ilce": "Güzelbahçe",
       "full_name": "İzmir / Güzelbahçe",
@@ -1059,7 +1059,7 @@
       "lng": 26.9
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-tuzla",
       "il": "İstanbul",
       "ilce": "Tuzla",
       "full_name": "İstanbul / Tuzla",
@@ -1091,7 +1091,7 @@
       "lng": 29.3
     },
     {
-      "district_id": null,
+      "district_id": "izmir-cesme",
       "il": "İzmir",
       "ilce": "Çeşme",
       "full_name": "İzmir / Çeşme",
@@ -1123,7 +1123,7 @@
       "lng": 26.3044
     },
     {
-      "district_id": null,
+      "district_id": "izmir-urla",
       "il": "İzmir",
       "ilce": "Urla",
       "full_name": "İzmir / Urla",
@@ -1155,7 +1155,7 @@
       "lng": 26.7633
     },
     {
-      "district_id": null,
+      "district_id": "antalya-dosemealti",
       "il": "Antalya",
       "ilce": "Döşemealtı",
       "full_name": "Antalya / Döşemealtı",
@@ -1187,7 +1187,7 @@
       "lng": 30.5667
     },
     {
-      "district_id": null,
+      "district_id": "edirne-merkez",
       "il": "Edirne",
       "ilce": "Merkez",
       "full_name": "Edirne / Merkez",
@@ -1219,7 +1219,7 @@
       "lng": 26.5557
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-sisli",
       "il": "İstanbul",
       "ilce": "Şişli",
       "full_name": "İstanbul / Şişli",
@@ -1251,7 +1251,7 @@
       "lng": 28.9877
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-beylikduzu",
       "il": "İstanbul",
       "ilce": "Beylikdüzü",
       "full_name": "İstanbul / Beylikdüzü",
@@ -1283,7 +1283,7 @@
       "lng": 28.6333
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-buyukcekmece",
       "il": "İstanbul",
       "ilce": "Büyükçekmece",
       "full_name": "İstanbul / Büyükçekmece",
@@ -1315,7 +1315,7 @@
       "lng": 28.5806
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-bakirkoy",
       "il": "İstanbul",
       "ilce": "Bakırköy",
       "full_name": "İstanbul / Bakırköy",
@@ -1347,7 +1347,7 @@
       "lng": 28.8725
     },
     {
-      "district_id": null,
+      "district_id": "ankara-kahramankazan",
       "il": "Ankara",
       "ilce": "Kahramankazan",
       "full_name": "Ankara / Kahramankazan",
@@ -1379,7 +1379,7 @@
       "lng": 32.6833
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-silivri",
       "il": "İstanbul",
       "ilce": "Silivri",
       "full_name": "İstanbul / Silivri",
@@ -1411,7 +1411,7 @@
       "lng": 28.2486
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-kadikoy",
       "il": "İstanbul",
       "ilce": "Kadıköy",
       "full_name": "İstanbul / Kadıköy",
@@ -1443,7 +1443,7 @@
       "lng": 29.05
     },
     {
-      "district_id": null,
+      "district_id": "ankara-cankaya",
       "il": "Ankara",
       "ilce": "Çankaya",
       "full_name": "Ankara / Çankaya",
@@ -1475,7 +1475,7 @@
       "lng": 32.8597
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-adalar",
       "il": "İstanbul",
       "ilce": "Adalar",
       "full_name": "İstanbul / Adalar",
@@ -1507,7 +1507,7 @@
       "lng": 29.1
     },
     {
-      "district_id": null,
+      "district_id": "bursa-nilufer",
       "il": "Bursa",
       "ilce": "Nilüfer",
       "full_name": "Bursa / Nilüfer",
@@ -1539,7 +1539,7 @@
       "lng": 28.9833
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-eyupsultan",
       "il": "İstanbul",
       "ilce": "Eyüpsultan",
       "full_name": "İstanbul / Eyüpsultan",
@@ -1571,7 +1571,7 @@
       "lng": 28.9344
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-uskudar",
       "il": "İstanbul",
       "ilce": "Üsküdar",
       "full_name": "İstanbul / Üsküdar",
@@ -1603,7 +1603,7 @@
       "lng": 29.0153
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-maltepe",
       "il": "İstanbul",
       "ilce": "Maltepe",
       "full_name": "İstanbul / Maltepe",
@@ -1635,7 +1635,7 @@
       "lng": 29.1319
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-kartal",
       "il": "İstanbul",
       "ilce": "Kartal",
       "full_name": "İstanbul / Kartal",
@@ -1667,7 +1667,7 @@
       "lng": 29.1833
     },
     {
-      "district_id": null,
+      "district_id": "ankara-altindag",
       "il": "Ankara",
       "ilce": "Altındağ",
       "full_name": "Ankara / Altındağ",
@@ -1699,7 +1699,7 @@
       "lng": 32.8694
     },
     {
-      "district_id": null,
+      "district_id": "kayseri-kocasinan",
       "il": "Kayseri",
       "ilce": "Kocasinan",
       "full_name": "Kayseri / Kocasinan",
@@ -1731,7 +1731,7 @@
       "lng": 35.4833
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-sariyer",
       "il": "İstanbul",
       "ilce": "Sarıyer",
       "full_name": "İstanbul / Sarıyer",
@@ -1763,7 +1763,7 @@
       "lng": 29.05
     },
     {
-      "district_id": null,
+      "district_id": "ankara-golbasi",
       "il": "Ankara",
       "ilce": "Gölbaşı",
       "full_name": "Ankara / Gölbaşı",
@@ -1795,7 +1795,7 @@
       "lng": 32.8
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-avcilar",
       "il": "İstanbul",
       "ilce": "Avcılar",
       "full_name": "İstanbul / Avcılar",
@@ -1827,7 +1827,7 @@
       "lng": 28.7219
     },
     {
-      "district_id": null,
+      "district_id": "ankara-yenimahalle",
       "il": "Ankara",
       "ilce": "Yenimahalle",
       "full_name": "Ankara / Yenimahalle",
@@ -1859,7 +1859,7 @@
       "lng": 32.7667
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-bayrampasa",
       "il": "İstanbul",
       "ilce": "Bayrampaşa",
       "full_name": "İstanbul / Bayrampaşa",
@@ -1891,7 +1891,7 @@
       "lng": 28.9167
     },
     {
-      "district_id": null,
+      "district_id": "konya-karatay",
       "il": "Konya",
       "ilce": "Karatay",
       "full_name": "Konya / Karatay",
@@ -1923,7 +1923,7 @@
       "lng": 32.5167
     },
     {
-      "district_id": null,
+      "district_id": "kayseri-melikgazi",
       "il": "Kayseri",
       "ilce": "Melikgazi",
       "full_name": "Kayseri / Melikgazi",
@@ -1955,7 +1955,7 @@
       "lng": 35.45
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-zeytinburnu",
       "il": "İstanbul",
       "ilce": "Zeytinburnu",
       "full_name": "İstanbul / Zeytinburnu",
@@ -1987,7 +1987,7 @@
       "lng": 28.9069
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-pendik",
       "il": "İstanbul",
       "ilce": "Pendik",
       "full_name": "İstanbul / Pendik",
@@ -2019,7 +2019,7 @@
       "lng": 29.2339
     },
     {
-      "district_id": null,
+      "district_id": "mugla-mentese",
       "il": "Muğla",
       "ilce": "Menteşe",
       "full_name": "Muğla / Menteşe",
@@ -2051,7 +2051,7 @@
       "lng": 28.365
     },
     {
-      "district_id": null,
+      "district_id": "antalya-kepez",
       "il": "Antalya",
       "ilce": "Kepez",
       "full_name": "Antalya / Kepez",
@@ -2083,7 +2083,7 @@
       "lng": 30.7167
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-atasehir",
       "il": "İstanbul",
       "ilce": "Ataşehir",
       "full_name": "İstanbul / Ataşehir",
@@ -2115,7 +2115,7 @@
       "lng": 29.1167
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-beykoz",
       "il": "İstanbul",
       "ilce": "Beykoz",
       "full_name": "İstanbul / Beykoz",
@@ -2147,7 +2147,7 @@
       "lng": 29.1
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-gungoren",
       "il": "İstanbul",
       "ilce": "Güngören",
       "full_name": "İstanbul / Güngören",
@@ -2179,7 +2179,7 @@
       "lng": 28.8667
     },
     {
-      "district_id": null,
+      "district_id": "eskisehir-odunpazari",
       "il": "Eskişehir",
       "ilce": "Odunpazarı",
       "full_name": "Eskişehir / Odunpazarı",
@@ -2211,7 +2211,7 @@
       "lng": 30.5267
     },
     {
-      "district_id": null,
+      "district_id": "izmir-gaziemir",
       "il": "İzmir",
       "ilce": "Gaziemir",
       "full_name": "İzmir / Gaziemir",
@@ -2243,7 +2243,7 @@
       "lng": 27.1528
     },
     {
-      "district_id": null,
+      "district_id": "izmir-buca",
       "il": "İzmir",
       "ilce": "Buca",
       "full_name": "İzmir / Buca",
@@ -2275,7 +2275,7 @@
       "lng": 27.1833
     },
     {
-      "district_id": null,
+      "district_id": "balikesir-altieylul",
       "il": "Balıkesir",
       "ilce": "Altıeylül",
       "full_name": "Balıkesir / Altıeylül",
@@ -2307,7 +2307,7 @@
       "lng": 27.8833
     },
     {
-      "district_id": null,
+      "district_id": "konya-selcuklu",
       "il": "Konya",
       "ilce": "Selçuklu",
       "full_name": "Konya / Selçuklu",
@@ -2339,7 +2339,7 @@
       "lng": 32.4833
     },
     {
-      "district_id": null,
+      "district_id": "eskisehir-tepebasi",
       "il": "Eskişehir",
       "ilce": "Tepebaşı",
       "full_name": "Eskişehir / Tepebaşı",
@@ -2371,7 +2371,7 @@
       "lng": 30.5167
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-kagithane",
       "il": "İstanbul",
       "ilce": "Kağıthane",
       "full_name": "İstanbul / Kağıthane",
@@ -2403,7 +2403,7 @@
       "lng": 28.9667
     },
     {
-      "district_id": null,
+      "district_id": "aydin-efeler",
       "il": "Aydın",
       "ilce": "Efeler",
       "full_name": "Aydın / Efeler",
@@ -2435,7 +2435,7 @@
       "lng": 27.8458
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-kucukcekmece",
       "il": "İstanbul",
       "ilce": "Küçükçekmece",
       "full_name": "İstanbul / Küçükçekmece",
@@ -2467,7 +2467,7 @@
       "lng": 28.7833
     },
     {
-      "district_id": null,
+      "district_id": "sakarya-serdivan",
       "il": "Sakarya",
       "ilce": "Serdivan",
       "full_name": "Sakarya / Serdivan",
@@ -2499,7 +2499,7 @@
       "lng": 30.4167
     },
     {
-      "district_id": null,
+      "district_id": "kutahya-merkez",
       "il": "Kütahya",
       "ilce": "Merkez",
       "full_name": "Kütahya / Merkez",
@@ -2531,7 +2531,7 @@
       "lng": 29.9833
     },
     {
-      "district_id": null,
+      "district_id": "ankara-etimesgut",
       "il": "Ankara",
       "ilce": "Etimesgut",
       "full_name": "Ankara / Etimesgut",
@@ -2563,7 +2563,7 @@
       "lng": 32.6833
     },
     {
-      "district_id": null,
+      "district_id": "bolu-merkez",
       "il": "Bolu",
       "ilce": "Merkez",
       "full_name": "Bolu / Merkez",
@@ -2595,7 +2595,7 @@
       "lng": 31.6069
     },
     {
-      "district_id": null,
+      "district_id": "denizli-merkezefendi",
       "il": "Denizli",
       "ilce": "Merkezefendi",
       "full_name": "Denizli / Merkezefendi",
@@ -2627,7 +2627,7 @@
       "lng": 29.0833
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-umraniye",
       "il": "İstanbul",
       "ilce": "Ümraniye",
       "full_name": "İstanbul / Ümraniye",
@@ -2659,7 +2659,7 @@
       "lng": 29.1
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-bahcelievler",
       "il": "İstanbul",
       "ilce": "Bahçelievler",
       "full_name": "İstanbul / Bahçelievler",
@@ -2691,7 +2691,7 @@
       "lng": 28.85
     },
     {
-      "district_id": null,
+      "district_id": "manisa-yunusemre",
       "il": "Manisa",
       "ilce": "Yunusemre",
       "full_name": "Manisa / Yunusemre",
@@ -2723,7 +2723,7 @@
       "lng": 27.4333
     },
     {
-      "district_id": null,
+      "district_id": "isparta-merkez",
       "il": "Isparta",
       "ilce": "Merkez",
       "full_name": "Isparta / Merkez",
@@ -2755,7 +2755,7 @@
       "lng": 30.5567
     },
     {
-      "district_id": null,
+      "district_id": "sakarya-adapazari",
       "il": "Sakarya",
       "ilce": "Adapazarı",
       "full_name": "Sakarya / Adapazarı",
@@ -2787,7 +2787,7 @@
       "lng": 30.395
     },
     {
-      "district_id": null,
+      "district_id": "adana-cukurova",
       "il": "Adana",
       "ilce": "Çukurova",
       "full_name": "Adana / Çukurova",
@@ -2819,7 +2819,7 @@
       "lng": 35.3333
     },
     {
-      "district_id": null,
+      "district_id": "gaziantep-sehitkamil",
       "il": "Gaziantep",
       "ilce": "Şehitkamil",
       "full_name": "Gaziantep / Şehitkamil",
@@ -2851,7 +2851,7 @@
       "lng": 37.3833
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-basaksehir",
       "il": "İstanbul",
       "ilce": "Başakşehir",
       "full_name": "İstanbul / Başakşehir",
@@ -2883,7 +2883,7 @@
       "lng": 28.8022
     },
     {
-      "district_id": null,
+      "district_id": "bursa-osmangazi",
       "il": "Bursa",
       "ilce": "Osmangazi",
       "full_name": "Bursa / Osmangazi",
@@ -2915,7 +2915,7 @@
       "lng": 29.0608
     },
     {
-      "district_id": null,
+      "district_id": "denizli-pamukkale",
       "il": "Denizli",
       "ilce": "Pamukkale",
       "full_name": "Denizli / Pamukkale",
@@ -2947,7 +2947,7 @@
       "lng": 29.1167
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-cekmekoy",
       "il": "İstanbul",
       "ilce": "Çekmeköy",
       "full_name": "İstanbul / Çekmeköy",
@@ -2979,7 +2979,7 @@
       "lng": 29.1833
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-esenler",
       "il": "İstanbul",
       "ilce": "Esenler",
       "full_name": "İstanbul / Esenler",
@@ -3011,7 +3011,7 @@
       "lng": 28.8833
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-gaziosmanpasa",
       "il": "İstanbul",
       "ilce": "Gaziosmanpaşa",
       "full_name": "İstanbul / Gaziosmanpaşa",
@@ -3043,7 +3043,7 @@
       "lng": 28.9167
     },
     {
-      "district_id": null,
+      "district_id": "ankara-kecioren",
       "il": "Ankara",
       "ilce": "Keçiören",
       "full_name": "Ankara / Keçiören",
@@ -3075,7 +3075,7 @@
       "lng": 32.8667
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-sancaktepe",
       "il": "İstanbul",
       "ilce": "Sancaktepe",
       "full_name": "İstanbul / Sancaktepe",
@@ -3107,7 +3107,7 @@
       "lng": 29.2333
     },
     {
-      "district_id": null,
+      "district_id": "adana-seyhan",
       "il": "Adana",
       "ilce": "Seyhan",
       "full_name": "Adana / Seyhan",
@@ -3139,7 +3139,7 @@
       "lng": 35.3167
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-bagcilar",
       "il": "İstanbul",
       "ilce": "Bağcılar",
       "full_name": "İstanbul / Bağcılar",
@@ -3171,7 +3171,7 @@
       "lng": 28.85
     },
     {
-      "district_id": null,
+      "district_id": "istanbul-esenyurt",
       "il": "İstanbul",
       "ilce": "Esenyurt",
       "full_name": "İstanbul / Esenyurt",
@@ -3203,7 +3203,7 @@
       "lng": 28.6833
     },
     {
-      "district_id": null,
+      "district_id": "afyon-merkez",
       "il": "Afyonkarahisar",
       "ilce": "Merkez",
       "full_name": "Afyonkarahisar / Merkez",
@@ -3235,7 +3235,7 @@
       "lng": 30.5567
     },
     {
-      "district_id": null,
+      "district_id": "agri-merkez",
       "il": "Ağrı",
       "ilce": "Merkez",
       "full_name": "Ağrı / Merkez",
@@ -3267,7 +3267,7 @@
       "lng": 43.0503
     },
     {
-      "district_id": null,
+      "district_id": "aksaray-merkez",
       "il": "Aksaray",
       "ilce": "Merkez",
       "full_name": "Aksaray / Merkez",
@@ -3299,7 +3299,7 @@
       "lng": 34.037
     },
     {
-      "district_id": null,
+      "district_id": "amasya-merkez",
       "il": "Amasya",
       "ilce": "Merkez",
       "full_name": "Amasya / Merkez",
@@ -3331,7 +3331,7 @@
       "lng": 35.8353
     },
     {
-      "district_id": null,
+      "district_id": "ardahan-merkez",
       "il": "Ardahan",
       "ilce": "Merkez",
       "full_name": "Ardahan / Merkez",
@@ -3363,7 +3363,7 @@
       "lng": 42.7022
     },
     {
-      "district_id": null,
+      "district_id": "artvin-merkez",
       "il": "Artvin",
       "ilce": "Merkez",
       "full_name": "Artvin / Merkez",
@@ -3395,7 +3395,7 @@
       "lng": 41.8183
     },
     {
-      "district_id": null,
+      "district_id": "batman-merkez",
       "il": "Batman",
       "ilce": "Merkez",
       "full_name": "Batman / Merkez",
@@ -3427,7 +3427,7 @@
       "lng": 41.1351
     },
     {
-      "district_id": null,
+      "district_id": "bayburt-merkez",
       "il": "Bayburt",
       "ilce": "Merkez",
       "full_name": "Bayburt / Merkez",
@@ -3459,7 +3459,7 @@
       "lng": 40.2249
     },
     {
-      "district_id": null,
+      "district_id": "bilecik-merkez",
       "il": "Bilecik",
       "ilce": "Merkez",
       "full_name": "Bilecik / Merkez",
@@ -3491,7 +3491,7 @@
       "lng": 29.9792
     },
     {
-      "district_id": null,
+      "district_id": "bingol-merkez",
       "il": "Bingöl",
       "ilce": "Merkez",
       "full_name": "Bingöl / Merkez",
@@ -3523,7 +3523,7 @@
       "lng": 40.4983
     },
     {
-      "district_id": null,
+      "district_id": "bitlis-merkez",
       "il": "Bitlis",
       "ilce": "Merkez",
       "full_name": "Bitlis / Merkez",
@@ -3555,7 +3555,7 @@
       "lng": 42.1232
     },
     {
-      "district_id": null,
+      "district_id": "burdur-merkez",
       "il": "Burdur",
       "ilce": "Merkez",
       "full_name": "Burdur / Merkez",
@@ -3587,7 +3587,7 @@
       "lng": 30.2908
     },
     {
-      "district_id": null,
+      "district_id": "corum-merkez",
       "il": "Çorum",
       "ilce": "Merkez",
       "full_name": "Çorum / Merkez",
@@ -3619,7 +3619,7 @@
       "lng": 34.9556
     },
     {
-      "district_id": null,
+      "district_id": "diyarbakir-merkez",
       "il": "Diyarbakır",
       "ilce": "Merkez",
       "full_name": "Diyarbakır / Merkez",
@@ -3651,7 +3651,7 @@
       "lng": 40.2306
     },
     {
-      "district_id": null,
+      "district_id": "duzce-merkez",
       "il": "Düzce",
       "ilce": "Merkez",
       "full_name": "Düzce / Merkez",
@@ -3683,7 +3683,7 @@
       "lng": 31.1565
     },
     {
-      "district_id": null,
+      "district_id": "elazig-merkez",
       "il": "Elazığ",
       "ilce": "Merkez",
       "full_name": "Elazığ / Merkez",
@@ -3715,7 +3715,7 @@
       "lng": 39.2226
     },
     {
-      "district_id": null,
+      "district_id": "erzincan-merkez",
       "il": "Erzincan",
       "ilce": "Merkez",
       "full_name": "Erzincan / Merkez",
@@ -3747,7 +3747,7 @@
       "lng": 39.5
     },
     {
-      "district_id": null,
+      "district_id": "giresun-merkez",
       "il": "Giresun",
       "ilce": "Merkez",
       "full_name": "Giresun / Merkez",
@@ -3779,7 +3779,7 @@
       "lng": 38.3895
     },
     {
-      "district_id": null,
+      "district_id": "gumushane-merkez",
       "il": "Gümüşhane",
       "ilce": "Merkez",
       "full_name": "Gümüşhane / Merkez",
@@ -3811,7 +3811,7 @@
       "lng": 39.4814
     },
     {
-      "district_id": null,
+      "district_id": "hakkari-merkez",
       "il": "Hakkari",
       "ilce": "Merkez",
       "full_name": "Hakkari / Merkez",
@@ -3843,7 +3843,7 @@
       "lng": 43.7408
     },
     {
-      "district_id": null,
+      "district_id": "hatay-antakya",
       "il": "Hatay",
       "ilce": "Antakya",
       "full_name": "Hatay / Antakya",
@@ -3875,7 +3875,7 @@
       "lng": 36.1603
     },
     {
-      "district_id": null,
+      "district_id": "igdir-merkez",
       "il": "Iğdır",
       "ilce": "Merkez",
       "full_name": "Iğdır / Merkez",
@@ -3907,7 +3907,7 @@
       "lng": 44.0333
     },
     {
-      "district_id": null,
+      "district_id": "kahramanmaras-merkez",
       "il": "Kahramanmaraş",
       "ilce": "Onikişubat",
       "full_name": "Kahramanmaraş / Onikişubat",
@@ -3939,7 +3939,7 @@
       "lng": 36.9371
     },
     {
-      "district_id": null,
+      "district_id": "karabuk-merkez",
       "il": "Karabük",
       "ilce": "Merkez",
       "full_name": "Karabük / Merkez",
@@ -3971,7 +3971,7 @@
       "lng": 32.6204
     },
     {
-      "district_id": null,
+      "district_id": "karaman-merkez",
       "il": "Karaman",
       "ilce": "Merkez",
       "full_name": "Karaman / Merkez",
@@ -4003,7 +4003,7 @@
       "lng": 33.2287
     },
     {
-      "district_id": null,
+      "district_id": "kars-merkez",
       "il": "Kars",
       "ilce": "Merkez",
       "full_name": "Kars / Merkez",
@@ -4035,7 +4035,7 @@
       "lng": 43.0975
     },
     {
-      "district_id": null,
+      "district_id": "kastamonu-merkez",
       "il": "Kastamonu",
       "ilce": "Merkez",
       "full_name": "Kastamonu / Merkez",
@@ -4067,7 +4067,7 @@
       "lng": 33.7827
     },
     {
-      "district_id": null,
+      "district_id": "kirklareli-merkez",
       "il": "Kırklareli",
       "ilce": "Merkez",
       "full_name": "Kırklareli / Merkez",
@@ -4099,7 +4099,7 @@
       "lng": 27.2167
     },
     {
-      "district_id": null,
+      "district_id": "kirsehir-merkez",
       "il": "Kırşehir",
       "ilce": "Merkez",
       "full_name": "Kırşehir / Merkez",
@@ -4131,7 +4131,7 @@
       "lng": 34.1709
     },
     {
-      "district_id": null,
+      "district_id": "malatya-merkez",
       "il": "Malatya",
       "ilce": "Battalgazi",
       "full_name": "Malatya / Battalgazi",
@@ -4163,7 +4163,7 @@
       "lng": 38.3095
     },
     {
-      "district_id": null,
+      "district_id": "mardin-merkez",
       "il": "Mardin",
       "ilce": "Artuklu",
       "full_name": "Mardin / Artuklu",
@@ -4195,7 +4195,7 @@
       "lng": 40.7245
     },
     {
-      "district_id": null,
+      "district_id": "mugla-dalaman",
       "il": "Muğla",
       "ilce": "Dalaman",
       "full_name": "Muğla / Dalaman",
@@ -4227,7 +4227,7 @@
       "lng": 28.7833
     },
     {
-      "district_id": null,
+      "district_id": "mus-merkez",
       "il": "Muş",
       "ilce": "Merkez",
       "full_name": "Muş / Merkez",
@@ -4259,7 +4259,7 @@
       "lng": 41.5064
     },
     {
-      "district_id": null,
+      "district_id": "nevsehir-merkez",
       "il": "Nevşehir",
       "ilce": "Merkez",
       "full_name": "Nevşehir / Merkez",
@@ -4291,7 +4291,7 @@
       "lng": 34.6857
     },
     {
-      "district_id": null,
+      "district_id": "nigde-merkez",
       "il": "Niğde",
       "ilce": "Merkez",
       "full_name": "Niğde / Merkez",
@@ -4323,7 +4323,7 @@
       "lng": 34.6833
     },
     {
-      "district_id": null,
+      "district_id": "ordu-altinordu",
       "il": "Ordu",
       "ilce": "Altınordu",
       "full_name": "Ordu / Altınordu",
@@ -4355,7 +4355,7 @@
       "lng": 37.8764
     },
     {
-      "district_id": null,
+      "district_id": "osmaniye-merkez",
       "il": "Osmaniye",
       "ilce": "Merkez",
       "full_name": "Osmaniye / Merkez",
@@ -4387,7 +4387,7 @@
       "lng": 36.2458
     },
     {
-      "district_id": null,
+      "district_id": "rize-merkez",
       "il": "Rize",
       "ilce": "Merkez",
       "full_name": "Rize / Merkez",
@@ -4419,7 +4419,7 @@
       "lng": 40.5234
     },
     {
-      "district_id": null,
+      "district_id": "sanliurfa-merkez",
       "il": "Şanlıurfa",
       "ilce": "Karaköprü",
       "full_name": "Şanlıurfa / Karaköprü",
@@ -4451,7 +4451,7 @@
       "lng": 38.7969
     },
     {
-      "district_id": null,
+      "district_id": "siirt-merkez",
       "il": "Siirt",
       "ilce": "Merkez",
       "full_name": "Siirt / Merkez",
@@ -4483,7 +4483,7 @@
       "lng": 41.95
     },
     {
-      "district_id": null,
+      "district_id": "sinop-merkez",
       "il": "Sinop",
       "ilce": "Merkez",
       "full_name": "Sinop / Merkez",
@@ -4515,7 +4515,7 @@
       "lng": 35.1531
     },
     {
-      "district_id": null,
+      "district_id": "sirnak-merkez",
       "il": "Şırnak",
       "ilce": "Merkez",
       "full_name": "Şırnak / Merkez",
@@ -4547,7 +4547,7 @@
       "lng": 42.4611
     },
     {
-      "district_id": null,
+      "district_id": "sivas-merkez",
       "il": "Sivas",
       "ilce": "Merkez",
       "full_name": "Sivas / Merkez",
@@ -4579,7 +4579,7 @@
       "lng": 37.0179
     },
     {
-      "district_id": null,
+      "district_id": "tokat-merkez",
       "il": "Tokat",
       "ilce": "Merkez",
       "full_name": "Tokat / Merkez",
@@ -4611,7 +4611,7 @@
       "lng": 36.5544
     },
     {
-      "district_id": null,
+      "district_id": "tunceli-merkez",
       "il": "Tunceli",
       "ilce": "Merkez",
       "full_name": "Tunceli / Merkez",
@@ -4643,7 +4643,7 @@
       "lng": 39.5478
     },
     {
-      "district_id": null,
+      "district_id": "usak-merkez",
       "il": "Uşak",
       "ilce": "Merkez",
       "full_name": "Uşak / Merkez",
@@ -4675,7 +4675,7 @@
       "lng": 29.4082
     },
     {
-      "district_id": null,
+      "district_id": "van-merkez",
       "il": "Van",
       "ilce": "İpekyolu",
       "full_name": "Van / İpekyolu",
@@ -4707,7 +4707,7 @@
       "lng": 43.4089
     },
     {
-      "district_id": null,
+      "district_id": "yalova-merkez",
       "il": "Yalova",
       "ilce": "Merkez",
       "full_name": "Yalova / Merkez",
@@ -4739,7 +4739,7 @@
       "lng": 29.2667
     },
     {
-      "district_id": null,
+      "district_id": "yozgat-merkez",
       "il": "Yozgat",
       "ilce": "Merkez",
       "full_name": "Yozgat / Merkez",
@@ -4771,7 +4771,7 @@
       "lng": 34.8147
     },
     {
-      "district_id": null,
+      "district_id": "zonguldak-merkez",
       "il": "Zonguldak",
       "ilce": "Merkez",
       "full_name": "Zonguldak / Merkez",
@@ -4803,7 +4803,7 @@
       "lng": 31.7987
     },
     {
-      "district_id": null,
+      "district_id": "ankara-mamak",
       "il": "Ankara",
       "ilce": "Mamak",
       "full_name": "Ankara / Mamak",
@@ -4835,7 +4835,7 @@
       "lng": 33
     },
     {
-      "district_id": null,
+      "district_id": "bursa-yildirim",
       "il": "Bursa",
       "ilce": "Yıldırım",
       "full_name": "Bursa / Yıldırım",
@@ -4867,7 +4867,7 @@
       "lng": 29.1
     },
     {
-      "district_id": null,
+      "district_id": "konya-meram",
       "il": "Konya",
       "ilce": "Meram",
       "full_name": "Konya / Meram",
@@ -4899,7 +4899,7 @@
       "lng": 32.45
     },
     {
-      "district_id": null,
+      "district_id": "bursa-gemlik",
       "il": "Bursa",
       "ilce": "Gemlik",
       "full_name": "Bursa / Gemlik",
@@ -4931,7 +4931,7 @@
       "lng": 29.1667
     },
     {
-      "district_id": null,
+      "district_id": "bursa-mudanya",
       "il": "Bursa",
       "ilce": "Mudanya",
       "full_name": "Bursa / Mudanya",
@@ -4963,7 +4963,7 @@
       "lng": 28.8833
     },
     {
-      "district_id": null,
+      "district_id": "bursa-inegol",
       "il": "Bursa",
       "ilce": "İnegöl",
       "full_name": "Bursa / İnegöl",
@@ -4995,7 +4995,7 @@
       "lng": 29.5136
     },
     {
-      "district_id": null,
+      "district_id": "bursa-karacabey",
       "il": "Bursa",
       "ilce": "Karacabey",
       "full_name": "Bursa / Karacabey",
@@ -5027,7 +5027,7 @@
       "lng": 28.3667
     },
     {
-      "district_id": null,
+      "district_id": "bursa-kestel",
       "il": "Bursa",
       "ilce": "Kestel",
       "full_name": "Bursa / Kestel",
@@ -5059,7 +5059,7 @@
       "lng": 29.2333
     },
     {
-      "district_id": null,
+      "district_id": "bursa-gursu",
       "il": "Bursa",
       "ilce": "Gürsu",
       "full_name": "Bursa / Gürsu",
@@ -5091,7 +5091,7 @@
       "lng": 29.1833
     },
     {
-      "district_id": null,
+      "district_id": "bursa-orhangazi",
       "il": "Bursa",
       "ilce": "Orhangazi",
       "full_name": "Bursa / Orhangazi",
@@ -5123,7 +5123,7 @@
       "lng": 29.3167
     },
     {
-      "district_id": null,
+      "district_id": "izmir-aliaga",
       "il": "İzmir",
       "ilce": "Aliağa",
       "full_name": "İzmir / Aliağa",
@@ -5155,7 +5155,7 @@
       "lng": 26.9667
     },
     {
-      "district_id": null,
+      "district_id": "izmir-dikili",
       "il": "İzmir",
       "ilce": "Dikili",
       "full_name": "İzmir / Dikili",
@@ -5187,7 +5187,7 @@
       "lng": 26.8917
     },
     {
-      "district_id": null,
+      "district_id": "izmir-menderes",
       "il": "İzmir",
       "ilce": "Menderes",
       "full_name": "İzmir / Menderes",
@@ -5219,7 +5219,7 @@
       "lng": 27.1333
     },
     {
-      "district_id": null,
+      "district_id": "izmir-seferihisar",
       "il": "İzmir",
       "ilce": "Seferihisar",
       "full_name": "İzmir / Seferihisar",
@@ -5251,7 +5251,7 @@
       "lng": 26.8344
     },
     {
-      "district_id": null,
+      "district_id": "izmir-torbali",
       "il": "İzmir",
       "ilce": "Torbalı",
       "full_name": "İzmir / Torbalı",
@@ -5283,7 +5283,7 @@
       "lng": 27.3667
     },
     {
-      "district_id": null,
+      "district_id": "izmir-odemis",
       "il": "İzmir",
       "ilce": "Ödemiş",
       "full_name": "İzmir / Ödemiş",
@@ -5315,7 +5315,7 @@
       "lng": 27.9667
     },
     {
-      "district_id": null,
+      "district_id": "izmir-tire",
       "il": "İzmir",
       "ilce": "Tire",
       "full_name": "İzmir / Tire",
@@ -5347,7 +5347,7 @@
       "lng": 27.7367
     },
     {
-      "district_id": null,
+      "district_id": "izmir-kemalpasa",
       "il": "İzmir",
       "ilce": "Kemalpaşa",
       "full_name": "İzmir / Kemalpaşa",
@@ -5379,7 +5379,7 @@
       "lng": 27.4183
     },
     {
-      "district_id": null,
+      "district_id": "aydin-didim",
       "il": "Aydın",
       "ilce": "Didim",
       "full_name": "Aydın / Didim",
@@ -5411,7 +5411,7 @@
       "lng": 27.2711
     },
     {
-      "district_id": null,
+      "district_id": "aydin-nazilli",
       "il": "Aydın",
       "ilce": "Nazilli",
       "full_name": "Aydın / Nazilli",
@@ -5443,7 +5443,7 @@
       "lng": 28.3167
     },
     {
-      "district_id": null,
+      "district_id": "aydin-soke",
       "il": "Aydın",
       "ilce": "Söke",
       "full_name": "Aydın / Söke",
@@ -5475,7 +5475,7 @@
       "lng": 27.41
     },
     {
-      "district_id": null,
+      "district_id": "aydin-ozdere",
       "il": "Aydın",
       "ilce": "Güzelhisar",
       "full_name": "Aydın / Güzelhisar",
@@ -5507,7 +5507,7 @@
       "lng": 27.1167
     },
     {
-      "district_id": null,
+      "district_id": "aydin-kosk",
       "il": "Aydın",
       "ilce": "Köşk",
       "full_name": "Aydın / Köşk",
@@ -5539,7 +5539,7 @@
       "lng": 28.15
     },
     {
-      "district_id": null,
+      "district_id": "aydin-incirliova",
       "il": "Aydın",
       "ilce": "İncirliova",
       "full_name": "Aydın / İncirliova",
@@ -5571,7 +5571,7 @@
       "lng": 27.6667
     },
     {
-      "district_id": null,
+      "district_id": "mugla-milas",
       "il": "Muğla",
       "ilce": "Milas",
       "full_name": "Muğla / Milas",
@@ -5603,7 +5603,7 @@
       "lng": 27.7833
     },
     {
-      "district_id": null,
+      "district_id": "mugla-datca",
       "il": "Muğla",
       "ilce": "Datça",
       "full_name": "Muğla / Datça",
@@ -5635,7 +5635,7 @@
       "lng": 27.6833
     },
     {
-      "district_id": null,
+      "district_id": "mugla-ula",
       "il": "Muğla",
       "ilce": "Ula",
       "full_name": "Muğla / Ula",
@@ -5667,7 +5667,7 @@
       "lng": 28.4167
     },
     {
-      "district_id": null,
+      "district_id": "mugla-ortaca",
       "il": "Muğla",
       "ilce": "Ortaca",
       "full_name": "Muğla / Ortaca",
@@ -5699,7 +5699,7 @@
       "lng": 28.7667
     },
     {
-      "district_id": null,
+      "district_id": "mugla-koycegiz",
       "il": "Muğla",
       "ilce": "Köyceğiz",
       "full_name": "Muğla / Köyceğiz",
@@ -5731,7 +5731,7 @@
       "lng": 28.6833
     },
     {
-      "district_id": null,
+      "district_id": "mugla-seydikemer",
       "il": "Muğla",
       "ilce": "Seydikemer",
       "full_name": "Muğla / Seydikemer",
@@ -5763,7 +5763,7 @@
       "lng": 29.3833
     },
     {
-      "district_id": null,
+      "district_id": "mugla-yatagan",
       "il": "Muğla",
       "ilce": "Yatağan",
       "full_name": "Muğla / Yatağan",
@@ -5795,7 +5795,7 @@
       "lng": 28.1333
     },
     {
-      "district_id": null,
+      "district_id": "canakkale-gelibolu",
       "il": "Çanakkale",
       "ilce": "Gelibolu",
       "full_name": "Çanakkale / Gelibolu",
@@ -5827,7 +5827,7 @@
       "lng": 26.6833
     },
     {
-      "district_id": null,
+      "district_id": "canakkale-biga",
       "il": "Çanakkale",
       "ilce": "Biga",
       "full_name": "Çanakkale / Biga",
@@ -5859,7 +5859,7 @@
       "lng": 27.2333
     },
     {
-      "district_id": null,
+      "district_id": "canakkale-ezine",
       "il": "Çanakkale",
       "ilce": "Ezine",
       "full_name": "Çanakkale / Ezine",
@@ -5891,7 +5891,7 @@
       "lng": 26.3333
     },
     {
-      "district_id": null,
+      "district_id": "canakkale-ayvacik",
       "il": "Çanakkale",
       "ilce": "Ayvacık",
       "full_name": "Çanakkale / Ayvacık",
@@ -5923,7 +5923,7 @@
       "lng": 26.4
     },
     {
-      "district_id": null,
+      "district_id": "canakkale-lapseki",
       "il": "Çanakkale",
       "ilce": "Lapseki",
       "full_name": "Çanakkale / Lapseki",
@@ -5953,6 +5953,1382 @@
       "data_note": "Bölge proxy verisi",
       "lat": 40.3667,
       "lng": 26.6833
+    },
+    {
+      "district_id": "manisa-sehzadeler",
+      "il": "Manisa",
+      "ilce": "Şehzadeler",
+      "full_name": "Manisa / Şehzadeler",
+      "default_overall_score_100": 44.9,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 250000,
+      "social_culture_score_20": 1.4,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 9,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 15,
+      "judicial_low_event_score_20": 11,
+      "judicial_region": "TR3 Ege",
+      "affordability_score_20": 17.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 18000,
+      "rent_price_m2_try": 112,
+      "avg_rent_try": 12200,
+      "avg_home_price_try": 2300000,
+      "rent_increase_1y_pct": 20.5,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.6167,
+      "lng": 27.4333
+    },
+    {
+      "district_id": "manisa-turgutlu",
+      "il": "Manisa",
+      "ilce": "Turgutlu",
+      "full_name": "Manisa / Turgutlu",
+      "default_overall_score_100": 47,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 145000,
+      "social_culture_score_20": 1.1,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 10,
+      "earthquake_risk_band": "Orta-yüksek",
+      "low_crowding_score_20": 16,
+      "judicial_low_event_score_20": 11.5,
+      "judicial_region": "TR3 Ege",
+      "affordability_score_20": 17.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 16500,
+      "rent_price_m2_try": 103,
+      "avg_rent_try": 11200,
+      "avg_home_price_try": 2100000,
+      "rent_increase_1y_pct": 19,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.5,
+      "lng": 27.7
+    },
+    {
+      "district_id": "manisa-salihli",
+      "il": "Manisa",
+      "ilce": "Salihli",
+      "full_name": "Manisa / Salihli",
+      "default_overall_score_100": 47.5,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 130000,
+      "social_culture_score_20": 1,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 10,
+      "earthquake_risk_band": "Orta-yüksek",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 11,
+      "judicial_region": "TR3 Ege",
+      "affordability_score_20": 18,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 15500,
+      "rent_price_m2_try": 97,
+      "avg_rent_try": 10500,
+      "avg_home_price_try": 1950000,
+      "rent_increase_1y_pct": 18.5,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.4833,
+      "lng": 28.1333
+    },
+    {
+      "district_id": "manisa-akhisar",
+      "il": "Manisa",
+      "ilce": "Akhisar",
+      "full_name": "Manisa / Akhisar",
+      "default_overall_score_100": 47.9,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 130000,
+      "social_culture_score_20": 1,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 10,
+      "earthquake_risk_band": "Orta-yüksek",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 11.5,
+      "judicial_region": "TR3 Ege",
+      "affordability_score_20": 18,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 15000,
+      "rent_price_m2_try": 94,
+      "avg_rent_try": 10200,
+      "avg_home_price_try": 1900000,
+      "rent_increase_1y_pct": 18,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.9167,
+      "lng": 27.8333
+    },
+    {
+      "district_id": "manisa-soma",
+      "il": "Manisa",
+      "ilce": "Soma",
+      "full_name": "Manisa / Soma",
+      "default_overall_score_100": 48.4,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 90000,
+      "social_culture_score_20": 0.9,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 11,
+      "earthquake_risk_band": "Orta",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 11,
+      "judicial_region": "TR3 Ege",
+      "affordability_score_20": 18.2,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 13500,
+      "rent_price_m2_try": 87,
+      "avg_rent_try": 9500,
+      "avg_home_price_try": 1700000,
+      "rent_increase_1y_pct": 17.5,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 39.1833,
+      "lng": 27.6
+    },
+    {
+      "district_id": "manisa-alasehir",
+      "il": "Manisa",
+      "ilce": "Alaşehir",
+      "full_name": "Manisa / Alaşehir",
+      "default_overall_score_100": 47.6,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 80000,
+      "social_culture_score_20": 0.9,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 10,
+      "earthquake_risk_band": "Orta-yüksek",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 11,
+      "judicial_region": "TR3 Ege",
+      "affordability_score_20": 18.2,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 14000,
+      "rent_price_m2_try": 88,
+      "avg_rent_try": 9600,
+      "avg_home_price_try": 1750000,
+      "rent_increase_1y_pct": 17.8,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.35,
+      "lng": 28.5167
+    },
+    {
+      "district_id": "eskisehir-sivrihisar",
+      "il": "Eskişehir",
+      "ilce": "Sivrihisar",
+      "full_name": "Eskişehir / Sivrihisar",
+      "default_overall_score_100": 54.1,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 25000,
+      "social_culture_score_20": 0.6,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük",
+      "low_crowding_score_20": 19,
+      "judicial_low_event_score_20": 11.5,
+      "judicial_region": "TR5 Batı Anadolu",
+      "affordability_score_20": 18.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 11000,
+      "rent_price_m2_try": 72,
+      "avg_rent_try": 8000,
+      "avg_home_price_try": 1400000,
+      "rent_increase_1y_pct": 16,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 39.45,
+      "lng": 31.5333
+    },
+    {
+      "district_id": "eskisehir-mihalgazi",
+      "il": "Eskişehir",
+      "ilce": "Mihalgazi",
+      "full_name": "Eskişehir / Mihalgazi",
+      "default_overall_score_100": 55.4,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 10000,
+      "social_culture_score_20": 0.5,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük",
+      "low_crowding_score_20": 20,
+      "judicial_low_event_score_20": 12,
+      "judicial_region": "TR5 Batı Anadolu",
+      "affordability_score_20": 19,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 9500,
+      "rent_price_m2_try": 62,
+      "avg_rent_try": 7000,
+      "avg_home_price_try": 1200000,
+      "rent_increase_1y_pct": 15,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 40.0167,
+      "lng": 30.5667
+    },
+    {
+      "district_id": "eskisehir-mahmudiye",
+      "il": "Eskişehir",
+      "ilce": "Mahmudiye",
+      "full_name": "Eskişehir / Mahmudiye",
+      "default_overall_score_100": 53.6,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 20000,
+      "social_culture_score_20": 0.5,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 14,
+      "earthquake_risk_band": "Orta",
+      "low_crowding_score_20": 19,
+      "judicial_low_event_score_20": 12,
+      "judicial_region": "TR5 Batı Anadolu",
+      "affordability_score_20": 18.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 10000,
+      "rent_price_m2_try": 65,
+      "avg_rent_try": 7200,
+      "avg_home_price_try": 1250000,
+      "rent_increase_1y_pct": 15.5,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 39.6,
+      "lng": 31
+    },
+    {
+      "district_id": "antalya-serik",
+      "il": "Antalya",
+      "ilce": "Serik",
+      "full_name": "Antalya / Serik",
+      "default_overall_score_100": 56.8,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 130000,
+      "social_culture_score_20": 1.2,
+      "sea_access_score_20": 14,
+      "sea_category": "Kıyı / ada",
+      "earthquake_safety_score_20": 8,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 11.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 16.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 28000,
+      "rent_price_m2_try": 168,
+      "avg_rent_try": 17500,
+      "avg_home_price_try": 3600000,
+      "rent_increase_1y_pct": 24.5,
+      "amortization_years": 17,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.9167,
+      "lng": 31.1
+    },
+    {
+      "district_id": "antalya-kaş",
+      "il": "Antalya",
+      "ilce": "Kaş",
+      "full_name": "Antalya / Kaş",
+      "default_overall_score_100": 63.5,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 30000,
+      "social_culture_score_20": 1.2,
+      "sea_access_score_20": 20,
+      "sea_category": "Kıyı / ada",
+      "earthquake_safety_score_20": 9,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 19,
+      "judicial_low_event_score_20": 12.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 14.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 65000,
+      "rent_price_m2_try": 320,
+      "avg_rent_try": 28000,
+      "avg_home_price_try": 8500000,
+      "rent_increase_1y_pct": 32,
+      "amortization_years": 22,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.2,
+      "lng": 29.6333
+    },
+    {
+      "district_id": "antalya-finike",
+      "il": "Antalya",
+      "ilce": "Finike",
+      "full_name": "Antalya / Finike",
+      "default_overall_score_100": 64.1,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 30000,
+      "social_culture_score_20": 0.9,
+      "sea_access_score_20": 20,
+      "sea_category": "Kıyı / ada",
+      "earthquake_safety_score_20": 9,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 19,
+      "judicial_low_event_score_20": 12,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 16,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 30000,
+      "rent_price_m2_try": 178,
+      "avg_rent_try": 18500,
+      "avg_home_price_try": 3900000,
+      "rent_increase_1y_pct": 25,
+      "amortization_years": 18,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.3,
+      "lng": 30.15
+    },
+    {
+      "district_id": "antalya-gazipasa",
+      "il": "Antalya",
+      "ilce": "Gazipaşa",
+      "full_name": "Antalya / Gazipaşa",
+      "default_overall_score_100": 60.1,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 50000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 16,
+      "sea_category": "Kıyı / ada",
+      "earthquake_safety_score_20": 9,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 18,
+      "judicial_low_event_score_20": 11.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 16.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 22000,
+      "rent_price_m2_try": 135,
+      "avg_rent_try": 14500,
+      "avg_home_price_try": 2800000,
+      "rent_increase_1y_pct": 22,
+      "amortization_years": 16,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.2667,
+      "lng": 32.3167
+    },
+    {
+      "district_id": "antalya-kumluca",
+      "il": "Antalya",
+      "ilce": "Kumluca",
+      "full_name": "Antalya / Kumluca",
+      "default_overall_score_100": 58.4,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 55000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 14,
+      "sea_category": "Kıyı / ada",
+      "earthquake_safety_score_20": 9,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 18,
+      "judicial_low_event_score_20": 11.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 16.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 22000,
+      "rent_price_m2_try": 133,
+      "avg_rent_try": 14200,
+      "avg_home_price_try": 2800000,
+      "rent_increase_1y_pct": 21.5,
+      "amortization_years": 16,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.3667,
+      "lng": 30.2833
+    },
+    {
+      "district_id": "antalya-elmali",
+      "il": "Antalya",
+      "ilce": "Elmalı",
+      "full_name": "Antalya / Elmalı",
+      "default_overall_score_100": 51.8,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 40000,
+      "social_culture_score_20": 0.7,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 12,
+      "earthquake_risk_band": "Orta",
+      "low_crowding_score_20": 19,
+      "judicial_low_event_score_20": 12,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 13000,
+      "rent_price_m2_try": 85,
+      "avg_rent_try": 9400,
+      "avg_home_price_try": 1650000,
+      "rent_increase_1y_pct": 17.5,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.7333,
+      "lng": 29.9167
+    },
+    {
+      "district_id": "antalya-akseki",
+      "il": "Antalya",
+      "ilce": "Akseki",
+      "full_name": "Antalya / Akseki",
+      "default_overall_score_100": 54.2,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 15000,
+      "social_culture_score_20": 0.5,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 13,
+      "earthquake_risk_band": "Orta",
+      "low_crowding_score_20": 20,
+      "judicial_low_event_score_20": 12.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 19,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 10500,
+      "rent_price_m2_try": 68,
+      "avg_rent_try": 7600,
+      "avg_home_price_try": 1300000,
+      "rent_increase_1y_pct": 16,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.05,
+      "lng": 31.7833
+    },
+    {
+      "district_id": "antalya-ibradı",
+      "il": "Antalya",
+      "ilce": "İbradı",
+      "full_name": "Antalya / İbradı",
+      "default_overall_score_100": 54.9,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 5000,
+      "social_culture_score_20": 0.4,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 13,
+      "earthquake_risk_band": "Orta",
+      "low_crowding_score_20": 20,
+      "judicial_low_event_score_20": 13,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 19.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 9000,
+      "rent_price_m2_try": 58,
+      "avg_rent_try": 6500,
+      "avg_home_price_try": 1100000,
+      "rent_increase_1y_pct": 15,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.15,
+      "lng": 31.5667
+    },
+    {
+      "district_id": "malatya-yesilyurt",
+      "il": "Malatya",
+      "ilce": "Yeşilyurt",
+      "full_name": "Malatya / Yeşilyurt",
+      "default_overall_score_100": 43.9,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 250000,
+      "social_culture_score_20": 1.2,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 8,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 15,
+      "judicial_low_event_score_20": 10,
+      "judicial_region": "TRB1 Ortadoğu Anadolu",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 14000,
+      "rent_price_m2_try": 92,
+      "avg_rent_try": 10200,
+      "avg_home_price_try": 1800000,
+      "rent_increase_1y_pct": 18,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.3667,
+      "lng": 38.2833
+    },
+    {
+      "district_id": "malatya-dogansehir",
+      "il": "Malatya",
+      "ilce": "Doğanşehir",
+      "full_name": "Malatya / Doğanşehir",
+      "default_overall_score_100": 47.4,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 35000,
+      "social_culture_score_20": 0.6,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 9,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 18,
+      "judicial_low_event_score_20": 10.5,
+      "judicial_region": "TRB1 Ortadoğu Anadolu",
+      "affordability_score_20": 18.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 10500,
+      "rent_price_m2_try": 68,
+      "avg_rent_try": 7500,
+      "avg_home_price_try": 1250000,
+      "rent_increase_1y_pct": 15.5,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.1,
+      "lng": 37.8833
+    },
+    {
+      "district_id": "elazig-kovancılar",
+      "il": "Elazığ",
+      "ilce": "Kovancılar",
+      "full_name": "Elazığ / Kovancılar",
+      "default_overall_score_100": 46.8,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 55000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 10,
+      "earthquake_risk_band": "Orta-yüksek",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 9.5,
+      "judicial_region": "TRB1 Ortadoğu Anadolu",
+      "affordability_score_20": 18.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 10500,
+      "rent_price_m2_try": 68,
+      "avg_rent_try": 7500,
+      "avg_home_price_try": 1250000,
+      "rent_increase_1y_pct": 15,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.7167,
+      "lng": 39.8333
+    },
+    {
+      "district_id": "diyarbakir-baglar",
+      "il": "Diyarbakır",
+      "ilce": "Bağlar",
+      "full_name": "Diyarbakır / Bağlar",
+      "default_overall_score_100": 43.7,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 450000,
+      "social_culture_score_20": 0.9,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük-orta",
+      "low_crowding_score_20": 11,
+      "judicial_low_event_score_20": 7,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 11000,
+      "rent_price_m2_try": 70,
+      "avg_rent_try": 7800,
+      "avg_home_price_try": 1350000,
+      "rent_increase_1y_pct": 15.5,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.9333,
+      "lng": 40.2167
+    },
+    {
+      "district_id": "diyarbakir-yenisehir",
+      "il": "Diyarbakır",
+      "ilce": "Yenişehir",
+      "full_name": "Diyarbakır / Yenişehir",
+      "default_overall_score_100": 45.6,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 200000,
+      "social_culture_score_20": 1.2,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük-orta",
+      "low_crowding_score_20": 13,
+      "judicial_low_event_score_20": 7.5,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 18,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 13000,
+      "rent_price_m2_try": 83,
+      "avg_rent_try": 9200,
+      "avg_home_price_try": 1650000,
+      "rent_increase_1y_pct": 16.5,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.9,
+      "lng": 40.25
+    },
+    {
+      "district_id": "diyarbakir-sur",
+      "il": "Diyarbakır",
+      "ilce": "Sur",
+      "full_name": "Diyarbakır / Sur",
+      "default_overall_score_100": 46.1,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 100000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük-orta",
+      "low_crowding_score_20": 14,
+      "judicial_low_event_score_20": 7,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 10500,
+      "rent_price_m2_try": 67,
+      "avg_rent_try": 7400,
+      "avg_home_price_try": 1250000,
+      "rent_increase_1y_pct": 15,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.9167,
+      "lng": 40.2333
+    },
+    {
+      "district_id": "sanliurfa-haliliye",
+      "il": "Şanlıurfa",
+      "ilce": "Haliliye",
+      "full_name": "Şanlıurfa / Haliliye",
+      "default_overall_score_100": 44.8,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 400000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük-orta",
+      "low_crowding_score_20": 12,
+      "judicial_low_event_score_20": 7,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 19,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 10000,
+      "rent_price_m2_try": 63,
+      "avg_rent_try": 7000,
+      "avg_home_price_try": 1200000,
+      "rent_increase_1y_pct": 14.5,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.1667,
+      "lng": 38.8
+    },
+    {
+      "district_id": "sanliurfa-eyupnebi",
+      "il": "Şanlıurfa",
+      "ilce": "Eyyübiye",
+      "full_name": "Şanlıurfa / Eyyübiye",
+      "default_overall_score_100": 45.6,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 350000,
+      "social_culture_score_20": 0.7,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük-orta",
+      "low_crowding_score_20": 13,
+      "judicial_low_event_score_20": 7,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 19,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 9800,
+      "rent_price_m2_try": 62,
+      "avg_rent_try": 6900,
+      "avg_home_price_try": 1180000,
+      "rent_increase_1y_pct": 14.2,
+      "amortization_years": 13,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.15,
+      "lng": 38.7833
+    },
+    {
+      "district_id": "van-tusba",
+      "il": "Van",
+      "ilce": "Tuşba",
+      "full_name": "Van / Tuşba",
+      "default_overall_score_100": 43.8,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 350000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 10,
+      "earthquake_risk_band": "Orta-yüksek",
+      "low_crowding_score_20": 15,
+      "judicial_low_event_score_20": 8,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 18.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 10000,
+      "rent_price_m2_try": 63,
+      "avg_rent_try": 7100,
+      "avg_home_price_try": 1200000,
+      "rent_increase_1y_pct": 14.8,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.5,
+      "lng": 43.4167
+    },
+    {
+      "district_id": "erzurum-palandoken",
+      "il": "Erzurum",
+      "ilce": "Palandöken",
+      "full_name": "Erzurum / Palandöken",
+      "default_overall_score_100": 52.5,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 200000,
+      "social_culture_score_20": 1,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 17,
+      "earthquake_risk_band": "Düşük",
+      "low_crowding_score_20": 15,
+      "judicial_low_event_score_20": 11.5,
+      "judicial_region": "TRA1 Kuzeydoğu Anadolu",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 13000,
+      "rent_price_m2_try": 85,
+      "avg_rent_try": 9500,
+      "avg_home_price_try": 1650000,
+      "rent_increase_1y_pct": 17,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 39.8833,
+      "lng": 41.25
+    },
+    {
+      "district_id": "erzurum-aziziye",
+      "il": "Erzurum",
+      "ilce": "Aziziye",
+      "full_name": "Erzurum / Aziziye",
+      "default_overall_score_100": 53.8,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 80000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 17,
+      "earthquake_risk_band": "Düşük",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 11,
+      "judicial_region": "TRA1 Kuzeydoğu Anadolu",
+      "affordability_score_20": 18.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 11500,
+      "rent_price_m2_try": 75,
+      "avg_rent_try": 8400,
+      "avg_home_price_try": 1450000,
+      "rent_increase_1y_pct": 16.5,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 39.9333,
+      "lng": 41.2
+    },
+    {
+      "district_id": "gaziantep-sahinbey",
+      "il": "Gaziantep",
+      "ilce": "Şahinbey",
+      "full_name": "Gaziantep / Şahinbey",
+      "default_overall_score_100": 41.5,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 700000,
+      "social_culture_score_20": 1.3,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 9,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 12,
+      "judicial_low_event_score_20": 9.5,
+      "judicial_region": "TRC1 Kuzeydoğu Akdeniz",
+      "affordability_score_20": 18,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 16000,
+      "rent_price_m2_try": 102,
+      "avg_rent_try": 11200,
+      "avg_home_price_try": 2100000,
+      "rent_increase_1y_pct": 19.5,
+      "amortization_years": 16,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.0833,
+      "lng": 37.3667
+    },
+    {
+      "district_id": "gaziantep-nizip",
+      "il": "Gaziantep",
+      "ilce": "Nizip",
+      "full_name": "Gaziantep / Nizip",
+      "default_overall_score_100": 44.4,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 150000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 10,
+      "earthquake_risk_band": "Orta-yüksek",
+      "low_crowding_score_20": 15,
+      "judicial_low_event_score_20": 9,
+      "judicial_region": "TRC1 Kuzeydoğu Akdeniz",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 12500,
+      "rent_price_m2_try": 81,
+      "avg_rent_try": 9000,
+      "avg_home_price_try": 1600000,
+      "rent_increase_1y_pct": 17.5,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.0167,
+      "lng": 37.7833
+    },
+    {
+      "district_id": "gaziantep-islahiye",
+      "il": "Gaziantep",
+      "ilce": "İslahiye",
+      "full_name": "Gaziantep / İslahiye",
+      "default_overall_score_100": 43.1,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 65000,
+      "social_culture_score_20": 0.7,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 7,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 16,
+      "judicial_low_event_score_20": 9.5,
+      "judicial_region": "TRC1 Kuzeydoğu Akdeniz",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 11000,
+      "rent_price_m2_try": 71,
+      "avg_rent_try": 8000,
+      "avg_home_price_try": 1400000,
+      "rent_increase_1y_pct": 17,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.0333,
+      "lng": 36.6333
+    },
+    {
+      "district_id": "kahramanmaras-dulkadiroglу",
+      "il": "Kahramanmaraş",
+      "ilce": "Dulkadiroğlu",
+      "full_name": "Kahramanmaraş / Dulkadiroğlu",
+      "default_overall_score_100": 39.6,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 300000,
+      "social_culture_score_20": 1,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 6,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 14,
+      "judicial_low_event_score_20": 8.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 18,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 15500,
+      "rent_price_m2_try": 100,
+      "avg_rent_try": 11000,
+      "avg_home_price_try": 2000000,
+      "rent_increase_1y_pct": 19,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.5833,
+      "lng": 36.9167
+    },
+    {
+      "district_id": "kahramanmaras-elbistan",
+      "il": "Kahramanmaraş",
+      "ilce": "Elbistan",
+      "full_name": "Kahramanmaraş / Elbistan",
+      "default_overall_score_100": 43.1,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 110000,
+      "social_culture_score_20": 0.7,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 7,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 8.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 11500,
+      "rent_price_m2_try": 74,
+      "avg_rent_try": 8300,
+      "avg_home_price_try": 1450000,
+      "rent_increase_1y_pct": 16.5,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 38.2,
+      "lng": 37.1833
+    },
+    {
+      "district_id": "hatay-iskenderun",
+      "il": "Hatay",
+      "ilce": "İskenderun",
+      "full_name": "Hatay / İskenderun",
+      "default_overall_score_100": 51.2,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 250000,
+      "social_culture_score_20": 1.3,
+      "sea_access_score_20": 16,
+      "sea_category": "Kıyı / ada",
+      "earthquake_safety_score_20": 5,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 14,
+      "judicial_low_event_score_20": 8,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 17.2,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 20000,
+      "rent_price_m2_try": 125,
+      "avg_rent_try": 13500,
+      "avg_home_price_try": 2600000,
+      "rent_increase_1y_pct": 22.5,
+      "amortization_years": 16,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.5833,
+      "lng": 36.1667
+    },
+    {
+      "district_id": "hatay-samandag",
+      "il": "Hatay",
+      "ilce": "Samandağ",
+      "full_name": "Hatay / Samandağ",
+      "default_overall_score_100": 53.6,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 80000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 16,
+      "sea_category": "Kıyı / ada",
+      "earthquake_safety_score_20": 5,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 8,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 17.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 16000,
+      "rent_price_m2_try": 100,
+      "avg_rent_try": 11000,
+      "avg_home_price_try": 2050000,
+      "rent_increase_1y_pct": 20,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.0833,
+      "lng": 35.9833
+    },
+    {
+      "district_id": "hatay-dortyol",
+      "il": "Hatay",
+      "ilce": "Dörtyol",
+      "full_name": "Hatay / Dörtyol",
+      "default_overall_score_100": 50.2,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 100000,
+      "social_culture_score_20": 0.9,
+      "sea_access_score_20": 12,
+      "sea_category": "Kıyı / ada",
+      "earthquake_safety_score_20": 5,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 16,
+      "judicial_low_event_score_20": 8.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 17.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 17000,
+      "rent_price_m2_try": 107,
+      "avg_rent_try": 11700,
+      "avg_home_price_try": 2200000,
+      "rent_increase_1y_pct": 21,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.8333,
+      "lng": 36.2333
+    },
+    {
+      "district_id": "hatay-kirikhan",
+      "il": "Hatay",
+      "ilce": "Kırıkhan",
+      "full_name": "Hatay / Kırıkhan",
+      "default_overall_score_100": 39.8,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 85000,
+      "social_culture_score_20": 0.7,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 5,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 16,
+      "judicial_low_event_score_20": 8,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 18,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 14000,
+      "rent_price_m2_try": 90,
+      "avg_rent_try": 10000,
+      "avg_home_price_try": 1800000,
+      "rent_increase_1y_pct": 19,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.4833,
+      "lng": 36.3667
+    },
+    {
+      "district_id": "hatay-reyhanli",
+      "il": "Hatay",
+      "ilce": "Reyhanlı",
+      "full_name": "Hatay / Reyhanlı",
+      "default_overall_score_100": 39.5,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 80000,
+      "social_culture_score_20": 0.7,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 5,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 16,
+      "judicial_low_event_score_20": 7.5,
+      "judicial_region": "TR6 Akdeniz",
+      "affordability_score_20": 18.2,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 13000,
+      "rent_price_m2_try": 84,
+      "avg_rent_try": 9300,
+      "avg_home_price_try": 1650000,
+      "rent_increase_1y_pct": 18,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 36.2667,
+      "lng": 36.5667
+    },
+    {
+      "district_id": "adiyaman-merkez",
+      "il": "Adıyaman",
+      "ilce": "Merkez",
+      "full_name": "Adıyaman / Merkez",
+      "default_overall_score_100": 41.5,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 250000,
+      "social_culture_score_20": 0.8,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 7,
+      "earthquake_risk_band": "Çok yüksek",
+      "low_crowding_score_20": 15,
+      "judicial_low_event_score_20": 8.5,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 18.5,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 11000,
+      "rent_price_m2_try": 71,
+      "avg_rent_try": 8000,
+      "avg_home_price_try": 1400000,
+      "rent_increase_1y_pct": 16.5,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.7648,
+      "lng": 38.2786
+    },
+    {
+      "district_id": "adiyaman-golbasi",
+      "il": "Adıyaman",
+      "ilce": "Gölbaşı",
+      "full_name": "Adıyaman / Gölbaşı",
+      "default_overall_score_100": 45.3,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 55000,
+      "social_culture_score_20": 0.6,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 8,
+      "earthquake_risk_band": "Yüksek",
+      "low_crowding_score_20": 18,
+      "judicial_low_event_score_20": 9,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 18.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 9500,
+      "rent_price_m2_try": 61,
+      "avg_rent_try": 6800,
+      "avg_home_price_try": 1100000,
+      "rent_increase_1y_pct": 15,
+      "amortization_years": 13,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.7833,
+      "lng": 37.65
+    },
+    {
+      "district_id": "mardin-kiziltepe",
+      "il": "Mardin",
+      "ilce": "Kızıltepe",
+      "full_name": "Mardin / Kızıltepe",
+      "default_overall_score_100": 47.3,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 200000,
+      "social_culture_score_20": 0.7,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük-orta",
+      "low_crowding_score_20": 15,
+      "judicial_low_event_score_20": 7,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 19,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 10000,
+      "rent_price_m2_try": 64,
+      "avg_rent_try": 7100,
+      "avg_home_price_try": 1200000,
+      "rent_increase_1y_pct": 15,
+      "amortization_years": 14,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.1933,
+      "lng": 40.5867
+    },
+    {
+      "district_id": "mardin-midyat",
+      "il": "Mardin",
+      "ilce": "Midyat",
+      "full_name": "Mardin / Midyat",
+      "default_overall_score_100": 49.3,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 80000,
+      "social_culture_score_20": 0.9,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük-orta",
+      "low_crowding_score_20": 17,
+      "judicial_low_event_score_20": 7.5,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 18.8,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 11500,
+      "rent_price_m2_try": 73,
+      "avg_rent_try": 8200,
+      "avg_home_price_try": 1400000,
+      "rent_increase_1y_pct": 16,
+      "amortization_years": 15,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.4167,
+      "lng": 41.3333
+    },
+    {
+      "district_id": "mardin-nusaybin",
+      "il": "Mardin",
+      "ilce": "Nusaybin",
+      "full_name": "Mardin / Nusaybin",
+      "default_overall_score_100": 47.3,
+      "model_rank": null,
+      "sege_rank": null,
+      "sege_score": null,
+      "sege_tier": null,
+      "population_2024": 100000,
+      "social_culture_score_20": 0.6,
+      "sea_access_score_20": 0,
+      "sea_category": "İç",
+      "earthquake_safety_score_20": 15,
+      "earthquake_risk_band": "Düşük-orta",
+      "low_crowding_score_20": 15,
+      "judicial_low_event_score_20": 7,
+      "judicial_region": "TRC2 Ortadoğu Anadolu",
+      "affordability_score_20": 19.2,
+      "endeksa_data_level": "İl düzeyi proxy",
+      "sale_price_m2_try": 9000,
+      "rent_price_m2_try": 57,
+      "avg_rent_try": 6400,
+      "avg_home_price_try": 980000,
+      "rent_increase_1y_pct": 14,
+      "amortization_years": 13,
+      "listing_stock_note": null,
+      "data_note": "Bölge proxy verisi",
+      "lat": 37.0667,
+      "lng": 41.2167
     }
   ]
 }

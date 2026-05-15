@@ -119,7 +119,7 @@ export default function IdealDistrictWizard() {
   const topDistricts = useMemo(() => {
     if (step !== 'results') return []
     return getTopDistricts(allDistricts, answers, ACTIVE_QUESTIONS, {
-      limit: 5,
+      limit: 20,
       selectedRegions,
     })
   }, [step, answers, allDistricts, selectedRegions])

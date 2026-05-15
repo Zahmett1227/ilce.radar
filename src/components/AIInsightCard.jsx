@@ -1,41 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
-
-function buildPrompt({ profile, answers, questions, districts, selectedRegionLabels }) {
-  const puanlar = questions
-    .map((q) => `- ${q.title}: ${answers[q.key] ?? '?'}/5`)
-    .join('\n')
-
-  const ilceler = districts
-    .map(
-      (d, i) =>
-        `${i + 1}. ${d.ilce ?? d.full_name} / ${d.il ?? ''} — skor: ${d.user_score_100}/100, kira: ${d.avg_rent_try ?? '?'} TRY, deprem: ${d.earthquake_risk_band ?? '?'}, deniz: ${d.sea_category ?? '?'}`,
-    )
-    .join('\n')
-
-  return `Sen Türkiye'de yaşam yeri seçimi konusunda uzman, samimi bir danışmansın.
-
-Kullanıcının profili: ${profile?.name ?? 'Bilinmiyor'}
-Bölge tercihi: ${selectedRegionLabels?.join(', ') ?? 'Farketmez'}
-
-Kullanıcının öncelik puanları:
-${puanlar}
-
-Önerilen ilçeler:
-${ilceler}
-
-Şimdi kullanıcıya "sen" diliyle, samimi bir arkadaş gibi 3 kısa paragraf yaz:
-1. Bu puanların ortaya koyduğu yaşam önceliğini yorumla (1-2 cümle, profilin adını tekrar etme)
-2. Neden bu 5 ilçenin önerildiğini, kullanıcının puanlarıyla bağlantılı açıkla (2-3 cümle)
-3. En üst sıradaki ilçe için dürüstçe bir risk veya dikkat edilmesi gereken noktayı belirt (1-2 cümle)
-
-Kurallar:
-- Markdown kullanma
-- "Algoritma", "skor", "veri" kelimelerini kullanma
-- Toplam 150-200 kelime
-- Türkçe yaz`
-}
+import { buildInsightPrompt } from '../utils/aiPrompt.js'
 
 export default function AIInsightCard({
   profile,
@@ -43,6 +9,7 @@ export default function AIInsightCard({
   questions,
   districts,
   selectedRegionLabels,
+  onInsightReady,
 }) {
   const [text, setText] = useState('')
   const [loading, setLoading] = useState(true)
@@ -76,7 +43,7 @@ export default function AIInsightCard({
             messages: [
               {
                 role: 'user',
-                content: buildPrompt({
+                content: buildInsightPrompt({
                   profile,
                   answers,
                   questions,
@@ -97,7 +64,10 @@ export default function AIInsightCard({
 
         const textBlock = data.content?.find((c) => c.type === 'text')
         const insightText = textBlock?.text ?? ''
-        if (!cancelled) setText(insightText)
+        if (!cancelled) {
+          setText(insightText)
+          onInsightReady?.(insightText)
+        }
       } catch {
         if (!cancelled) setError(true)
       } finally {

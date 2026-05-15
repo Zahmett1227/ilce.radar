@@ -264,6 +264,31 @@ export function getTopTwoWeightDrivers(answers, questions) {
 }
 
 /**
+ * @param {Record<string, unknown>} sourceDistrict
+ * @param {Record<string, unknown>[]} allDistricts
+ * @param {{ scoreColumn: string }[]} questions
+ * @param {number} [count=3]
+ */
+export function findSimilarDistricts(sourceDistrict, allDistricts, questions, count = 3) {
+  const srcKey = `${sourceDistrict.il ?? ''}|${sourceDistrict.ilce ?? ''}`
+  const sourceVec = questions.map((q) => safeNumber(sourceDistrict[q.scoreColumn], 0))
+
+  return allDistricts
+    .filter((d) => `${d.il ?? ''}|${d.ilce ?? ''}` !== srcKey)
+    .map((d) => {
+      const dist = Math.sqrt(
+        questions.reduce((sum, q, i) => {
+          const diff = safeNumber(d[q.scoreColumn], 0) - sourceVec[i]
+          return sum + diff * diff
+        }, 0),
+      )
+      return { ...d, _euclideanDist: dist }
+    })
+    .sort((a, b) => a._euclideanDist - b._euclideanDist)
+    .slice(0, count)
+}
+
+/**
  * @param {Record<string, number | null>} answers
  * @param {{ key: string; title: string }[]} questions
  */
