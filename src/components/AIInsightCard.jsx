@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
 import { buildInsightPrompt } from '../utils/aiPrompt.js'
+import { analyzeWithGroq } from '../services/aiService.js'
 
 export default function AIInsightCard({
   profile,
@@ -32,44 +33,24 @@ export default function AIInsightCard({
 
     async function fetchInsight() {
       try {
-        const res = await fetch('http://localhost:3001/api/claude', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            model: 'claude-sonnet-4-6',
-            max_tokens: 400,
-            messages: [
-              {
-                role: 'user',
-                content: buildInsightPrompt({
-                  profile,
-                  answers,
-                  questions,
-                  districts,
-                  selectedRegionLabels,
-                }),
-              },
-            ],
-          }),
+        const prompt = buildInsightPrompt({
+          profile,
+          answers,
+          questions,
+          districts,
+          selectedRegionLabels,
         })
-
-        const data = await res.json()
+        const insightText = await analyzeWithGroq(prompt)
         if (cancelled) return
 
-        if (!res.ok || data.error) {
-          throw new Error(data.error?.message ?? 'API hatası')
-        }
-
-        const textBlock = data.content?.find((c) => c.type === 'text')
-        const insightText = textBlock?.text ?? ''
         if (!cancelled) {
           setText(insightText)
           onInsightReady?.(insightText)
         }
-      } catch {
-        if (!cancelled) setError(true)
+      } catch (err) {
+        if (!cancelled) {
+          setError(err?.message ?? true)
+        }
       } finally {
         if (!cancelled) setLoading(false)
       }
@@ -121,15 +102,20 @@ export default function AIInsightCard({
               animate={{ opacity: 1 }}
               className="text-sm leading-relaxed text-slate-500"
             >
-              Analiz yüklenemedi. Proxy sunucusunun çalıştığından (
-              <code className="rounded bg-slate-800 px-1 py-0.5 text-xs text-slate-300">
-                node server.js
-              </code>
-              , port 3001) ve ortamda{' '}
-              <code className="rounded bg-slate-800 px-1 py-0.5 text-xs text-slate-300">
-                ANTHROPIC_API_KEY
-              </code>{' '}
-              tanımlı olduğundan emin ol.
+              {typeof error === 'string' ? error : 'Analiz yüklenemedi.'}{' '}
+              {typeof error === 'string' ? null : (
+                <>
+                  Yerelde{' '}
+                  <code className="rounded bg-slate-800 px-1 py-0.5 text-xs text-slate-300">
+                    .env
+                  </code>{' '}
+                  içinde{' '}
+                  <code className="rounded bg-slate-800 px-1 py-0.5 text-xs text-slate-300">
+                    GROQ_API_KEY
+                  </code>{' '}
+                  tanımlı olduğundan emin ol.
+                </>
+              )}
             </motion.p>
           ) : loading && text === '' ? (
             <motion.div

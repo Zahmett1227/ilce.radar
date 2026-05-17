@@ -1,16 +1,42 @@
-# React + Vite
+# ilce.radar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Türkiye'de yaşam yeri tercihlerine göre ilçe öneren React + Vite uygulaması.
 
-Currently, two official plugins are available:
+## Groq API (yapay zeka analizi)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Analiz istekleri yalnızca sunucu tarafından Groq'a iletilir. `GROQ_API_KEY` asla frontend bundle'ına yazılmaz.
 
-## React Compiler
+### Yerel geliştirme
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. `.env.example` dosyasını `.env` olarak kopyalayın.
+2. [Groq Console](https://console.groq.com/) üzerinden API anahtarı alın.
+3. `.env` içine ekleyin:
 
-## Expanding the ESLint configuration
+```env
+GROQ_API_KEY=your_groq_api_key_here
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. `npm run dev` — Vite dev sunucusu `/api/analyze` endpoint'ini yerelde de sunar.
+
+### Vercel deploy
+
+Vercel Dashboard → Project Settings → Environment Variables bölümüne `GROQ_API_KEY` ekleyin (Production, Preview, Development).
+
+Deploy sonrası frontend `POST /api/analyze` üzerinden `api/analyze.js` serverless fonksiyonunu çağırır.
+
+### Güvenlik
+
+- Gerçek API anahtarını yalnızca `.env` (yerel) ve Vercel Environment Variables (production) içinde tutun.
+- `.env`, `.env.local`, `.env.*.local` dosyalarını asla commit etmeyin.
+- `.env.example` yalnızca placeholder içerir; gerçek anahtar yazmayın.
+- Anahtar yanlışlıkla paylaşıldıysa [Groq Console](https://console.groq.com/) üzerinden iptal edip yenisini oluşturun.
+
+## Komutlar
+
+```bash
+npm install
+npm run dev      # geliştirme
+npm run build    # production build
+npm run preview  # build önizleme
+npm test         # birim testleri
+```

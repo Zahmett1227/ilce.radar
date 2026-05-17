@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Send, Sparkles } from 'lucide-react'
 import { buildChatSystemPrompt } from '../utils/aiPrompt.js'
+import { analyzeWithGroq } from '../services/aiService.js'
 
 const MAX_TURNS = 5
 
@@ -51,33 +52,20 @@ export default function AIChatPanel({
     }, 50)
 
     try {
-      const res = await fetch('http://localhost:3001/api/claude', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-6',
-          max_tokens: 600,
-          system: buildChatSystemPrompt({
-            profile,
-            answers,
-            questions,
-            districts,
-            selectedRegionLabels,
-            insightText,
-          }),
-          messages: newMessages,
-        }),
+      const systemPrompt = buildChatSystemPrompt({
+        profile,
+        answers,
+        questions,
+        districts,
+        selectedRegionLabels,
+        insightText,
       })
+      const conversation = newMessages
+        .map((m) => `${m.role === 'user' ? 'Kullanıcı' : 'Asistan'}: ${m.content}`)
+        .join('\n\n')
+      const prompt = `${systemPrompt}\n\n---\n\nKonuşma:\n${conversation}\n\nSon kullanıcı mesajına kısa ve samimi bir yanıt ver.`
 
-      const data = await res.json()
-
-      if (!res.ok || data.error) {
-        throw new Error(data.error?.message ?? 'API hatası')
-      }
-
-      const textBlock = data.content?.find((c) => c.type === 'text')
-      const reply = textBlock?.text ?? ''
-
+      const reply = await analyzeWithGroq(prompt)
       setMessages((prev) => [...prev, { role: 'assistant', content: reply }])
     } catch {
       setMessages((prev) => [
@@ -85,7 +73,7 @@ export default function AIChatPanel({
         {
           role: 'assistant',
           content:
-            'Yanıt alınamadı. Proxy sunucusunun çalıştığından emin ol (node server.js, port 3001).',
+            'Yanıt alınamadı. .env dosyasında GROQ_API_KEY tanımlı olduğundan emin ol.',
         },
       ])
     } finally {
