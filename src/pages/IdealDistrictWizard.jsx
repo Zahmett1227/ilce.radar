@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import {
   Sparkles,
@@ -16,6 +16,16 @@ import ResultScreen from '../components/ResultScreen.jsx'
 import StartScreen from '../components/StartScreen.jsx'
 import { mergeMetricQuestions } from '../utils/questionMerge.js'
 import { getTopDistricts } from '../utils/scoring.js'
+import {
+  clearWizardSession,
+  loadWizardSession,
+  saveWizardSession,
+} from '../utils/sessionState.js'
+import {
+  clearShareStateFromUrl,
+  readShareStateFromUrl,
+  writeShareStateToUrl,
+} from '../utils/shareUrl.js'
 
 const ICON_BY_KEY = {
   socialCulture: Sparkles,
@@ -105,11 +115,50 @@ function emptyAnswers() {
   return Object.fromEntries(ACTIVE_QUESTIONS.map((q) => [q.key, null]))
 }
 
-export default function IdealDistrictWizard() {
-  const [step, setStep] = useState('start')
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  const [answers, setAnswers] = useState(() => emptyAnswers())
-  const [selectedRegions, setSelectedRegions] = useState([])
+function isCompleteAnswers(answers) {
+  return ACTIVE_QUESTIONS.every((q) => {
+    const v = answers[q.key]
+    return typeof v === 'number' && v >= 1 && v <= 5
+  })
+}
+
+function getInitialWizardState() {
+  const fromUrl = readShareStateFromUrl()
+  if (fromUrl && isCompleteAnswers(fromUrl.answers)) {
+    return {
+      step: 'results',
+      answers: fromUrl.answers,
+      selectedRegions: fromUrl.selectedRegions,
+      currentQuestionIndex: ACTIVE_QUESTIONS.length - 1,
+    }
+  }
+
+  const session = loadWizardSession()
+  if (session) {
+    return {
+      step: session.step,
+      answers: { ...emptyAnswers(), ...session.answers },
+      selectedRegions: session.selectedRegions,
+      currentQuestionIndex: session.currentQuestionIndex,
+    }
+  }
+
+  return {
+    step: 'start',
+    answers: emptyAnswers(),
+    selectedRegions: [],
+    currentQuestionIndex: 0,
+  }
+}
+
+export default function IdealDistrictWizard({ onOpenMethodology }) {
+  const initial = useMemo(() => getInitialWizardState(), [])
+  const [step, setStep] = useState(initial.step)
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(
+    initial.currentQuestionIndex,
+  )
+  const [answers, setAnswers] = useState(initial.answers)
+  const [selectedRegions, setSelectedRegions] = useState(initial.selectedRegions)
 
   const { districts: allDistricts, generatedAt, rowCount } = useMemo(
     () => unwrapDistricts(districtsBundle),
@@ -123,6 +172,17 @@ export default function IdealDistrictWizard() {
       selectedRegions,
     })
   }, [step, answers, allDistricts, selectedRegions])
+
+  useEffect(() => {
+    if (step !== 'results' || !isCompleteAnswers(answers)) return
+    saveWizardSession({
+      step,
+      answers,
+      selectedRegions,
+      currentQuestionIndex,
+    })
+    writeShareStateToUrl({ answers, selectedRegions })
+  }, [step, answers, selectedRegions, currentQuestionIndex])
 
   const currentQuestion = ACTIVE_QUESTIONS[currentQuestionIndex]
   const totalQuestions = ACTIVE_QUESTIONS.length
@@ -165,6 +225,8 @@ export default function IdealDistrictWizard() {
     setCurrentQuestionIndex(0)
     setSelectedRegions([])
     setStep('start')
+    clearWizardSession()
+    clearShareStateFromUrl()
   }
 
   const selectedValue =
@@ -172,16 +234,15 @@ export default function IdealDistrictWizard() {
 
   return (
     <div className="min-h-svh bg-[#050810] text-slate-100">
-      {/* Dot grid */}
       <div
         className="pointer-events-none fixed inset-0"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(148,163,184,0.055) 1px, transparent 1px)',
+          backgroundImage:
+            'radial-gradient(circle, rgba(148,163,184,0.055) 1px, transparent 1px)',
           backgroundSize: '32px 32px',
         }}
         aria-hidden
       />
-      {/* Glow orbs */}
       <div
         className="pointer-events-none fixed inset-0"
         style={{
@@ -200,7 +261,7 @@ export default function IdealDistrictWizard() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <StartScreen onStart={handleStart} />
+              <StartScreen onStart={handleStart} onOpenMethodology={onOpenMethodology} />
             </motion.div>
           )}
 
@@ -267,6 +328,7 @@ export default function IdealDistrictWizard() {
                 questions={ACTIVE_QUESTIONS}
                 onChangePreferences={handleChangePreferences}
                 onRestart={handleRestart}
+                onOpenMethodology={onOpenMethodology}
               />
             </motion.div>
           )}

@@ -23,7 +23,9 @@ export function useFavorites() {
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify([...favorites]))
-    } catch {}
+    } catch {
+      /* storage full or private mode */
+    }
   }, [favorites])
 
   const toggleFavorite = useCallback((key) => {

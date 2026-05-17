@@ -18,6 +18,10 @@ GROQ_API_KEY=your_groq_api_key_here
 
 4. `npm run dev` — Vite dev sunucusu `/api/analyze` endpoint'ini yerelde de sunar.
 
+Sonuçlar oturum boyunca `sessionStorage`'da saklanır; paylaşılabilir link için sonuç ekranındaki **Linki kopyala** butonunu kullanın.
+
+Veri metodolojisi: `/veri` veya ana sayfadaki footer linki.
+
 ### Vercel deploy
 
 Vercel Dashboard → Project Settings → Environment Variables bölümüne `GROQ_API_KEY` ekleyin (Production, Preview, Development).

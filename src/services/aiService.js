@@ -1,19 +1,16 @@
 /**
  * Groq analizi — yalnızca kendi backend endpoint'imize istek atar.
- * API anahtarı asla frontend'e girmez.
- *
- * @example
- * import { analyzeWithGroq } from '../services/aiService.js'
- * import { buildInsightPrompt } from '../utils/aiPrompt.js'
- *
- * const prompt = buildInsightPrompt({ profile, answers, questions, districts, selectedRegionLabels })
- * const insight = await analyzeWithGroq(prompt)
  */
-export async function analyzeWithGroq(prompt) {
+export async function analyzeWithGroq(prompt, options = {}) {
+  const body = { prompt }
+  if (options.cacheKey) {
+    body.cacheKey = options.cacheKey
+  }
+
   const res = await fetch('/api/analyze', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ prompt }),
+    body: JSON.stringify(body),
   })
 
   let data
@@ -28,4 +25,11 @@ export async function analyzeWithGroq(prompt) {
   }
 
   return data.result
+}
+
+export function buildInsightCacheKey({ districts, answers, questions, selectedRegionLabels }) {
+  const districtIds = districts.map((d) => d.district_id ?? d.full_name).join('|')
+  const answerKeys = questions.map((q) => `${q.key}:${answers[q.key] ?? ''}`).join(',')
+  const regions = (selectedRegionLabels ?? []).join(',')
+  return `insight::${districtIds}::${answerKeys}::${regions}`
 }

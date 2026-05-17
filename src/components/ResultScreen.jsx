@@ -1,10 +1,10 @@
-import { useCallback, useMemo, useState } from 'react'
+import { lazy, Suspense, useCallback, useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowLeftRight, Bookmark, Share2, X } from 'lucide-react'
+import { ArrowLeftRight, Bookmark, Link2, Share2, X } from 'lucide-react'
 import LifeProfileCard from './LifeProfileCard.jsx'
 import ResultCard from './ResultCard.jsx'
-import DistrictMap from './DistrictMap.jsx'
 import Toast from './Toast.jsx'
+import SiteFooter from './SiteFooter.jsx'
 import { getLifeProfile } from '../utils/profile.js'
 import {
   getSelectedRegionLabels,
@@ -12,12 +12,23 @@ import {
   normalizeSelectedRegions,
 } from '../utils/regions.js'
 import { createShareText, shareResultText } from '../utils/share.js'
+import { buildShareUrl } from '../utils/shareUrl.js'
 import { formatScore } from '../utils/formatters.js'
 import { useFavorites, districtKey } from '../hooks/useFavorites.js'
-import ComparisonModal from './ComparisonModal.jsx'
-import AIInsightCard from './AIInsightCard.jsx'
-import AIChatPanel from './AIChatPanel.jsx'
 import ResultFilters, { defaultFilters, MAX_RENT_LIMIT } from './ResultFilters.jsx'
+
+const DistrictMap = lazy(() => import('./DistrictMap.jsx'))
+const AIInsightCard = lazy(() => import('./AIInsightCard.jsx'))
+const AIChatPanel = lazy(() => import('./AIChatPanel.jsx'))
+const ComparisonModal = lazy(() => import('./ComparisonModal.jsx'))
+
+function PanelFallback({ label }) {
+  return (
+    <div className="rounded-3xl border border-white/10 bg-slate-900/40 p-6 text-center text-sm text-slate-500">
+      {label} yükleniyor…
+    </div>
+  )
+}
 
 function formatSnapshotDate(iso) {
   if (!iso || typeof iso !== 'string') return null
@@ -39,6 +50,7 @@ export default function ResultScreen({
   questions,
   onChangePreferences,
   onRestart,
+  onOpenMethodology,
 }) {
   const [toast, setToast] = useState(null)
   const [insightText, setInsightText] = useState('')
@@ -101,15 +113,27 @@ export default function ResultScreen({
     districts.length === 0 && !isAny && normalizedRegions.length > 0
 
   const handleShare = async () => {
-    const text = createShareText(profile, districts, selectedRegions)
-    const r = await shareResultText(text)
+    const shareUrl = buildShareUrl({ answers, selectedRegions })
+    const text = `${createShareText(profile, districts, selectedRegions)}\n\nSonuç linki:\n${shareUrl}`
+    const r = await shareResultText(text, { url: shareUrl })
     setToast(
       r === 'shared'
         ? 'Paylaşım penceresi açıldı.'
         : r === 'copied'
-          ? 'Sonuç panoya kopyalandı.'
+          ? 'Sonuç ve link panoya kopyalandı.'
           : 'Bu cihazda paylaşım veya pano kullanılamadı.',
     )
+    setTimeout(() => setToast(null), 2800)
+  }
+
+  const handleCopyLink = async () => {
+    const shareUrl = buildShareUrl({ answers, selectedRegions })
+    try {
+      await navigator.clipboard.writeText(shareUrl)
+      setToast('Sonuç linki panoya kopyalandı.')
+    } catch {
+      setToast('Link kopyalanamadı.')
+    }
     setTimeout(() => setToast(null), 2800)
   }
 
@@ -135,7 +159,9 @@ export default function ResultScreen({
 
           {allDistricts?.length > 0 && districts.length > 0 && (
             <div className="mt-6">
-              <DistrictMap allDistricts={allDistricts} topDistricts={districts} />
+              <Suspense fallback={<PanelFallback label="Harita" />}>
+                <DistrictMap allDistricts={allDistricts} topDistricts={districts} />
+              </Suspense>
               <p className="mt-2 text-center text-xs text-slate-500">
                 Yeşil = yüksek uyum · Sarı = orta · Kırmızı = düşük · Beyaz halka = senin için önerilen
               </p>
@@ -247,22 +273,26 @@ export default function ResultScreen({
 
           {filteredDistricts.length > 0 && (
             <div className="mt-8 space-y-4">
-              <AIInsightCard
-                profile={profile}
-                answers={answers}
-                questions={questions}
-                districts={filteredDistricts}
-                selectedRegionLabels={regionPillLabels}
-                onInsightReady={setInsightText}
-              />
-              <AIChatPanel
-                profile={profile}
-                answers={answers}
-                questions={questions}
-                districts={filteredDistricts}
-                selectedRegionLabels={regionPillLabels}
-                insightText={insightText}
-              />
+              <Suspense fallback={<PanelFallback label="Yapay zeka analizi" />}>
+                <AIInsightCard
+                  profile={profile}
+                  answers={answers}
+                  questions={questions}
+                  districts={filteredDistricts}
+                  selectedRegionLabels={regionPillLabels}
+                  onInsightReady={setInsightText}
+                />
+              </Suspense>
+              <Suspense fallback={<PanelFallback label="Sohbet" />}>
+                <AIChatPanel
+                  profile={profile}
+                  answers={answers}
+                  questions={questions}
+                  districts={filteredDistricts}
+                  selectedRegionLabels={regionPillLabels}
+                  insightText={insightText}
+                />
+              </Suspense>
             </div>
           )}
 
@@ -333,15 +363,26 @@ export default function ResultScreen({
                 </ol>
               </div>
 
-              <motion.button
-                type="button"
-                whileTap={{ scale: 0.98 }}
-                onClick={handleShare}
-                className="flex w-full min-h-[52px] items-center justify-center gap-2 rounded-2xl border border-white/15 bg-slate-900/55 px-6 text-base font-medium text-slate-100 shadow-inner shadow-black/20 transition hover:border-emerald-500/35 hover:bg-slate-800/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
-              >
-                <Share2 className="h-5 w-5 shrink-0 text-emerald-300/90" aria-hidden />
-                Sonucumu paylaş
-              </motion.button>
+              <motion.div className="flex flex-col gap-2 sm:flex-row">
+                <motion.button
+                  type="button"
+                  whileTap={{ scale: 0.98 }}
+                  onClick={handleShare}
+                  className="flex min-h-[52px] flex-1 items-center justify-center gap-2 rounded-2xl border border-white/15 bg-slate-900/55 px-6 text-base font-medium text-slate-100 shadow-inner shadow-black/20 transition hover:border-emerald-500/35 hover:bg-slate-800/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                >
+                  <Share2 className="h-5 w-5 shrink-0 text-emerald-300/90" aria-hidden />
+                  Sonucumu paylaş
+                </motion.button>
+                <motion.button
+                  type="button"
+                  whileTap={{ scale: 0.98 }}
+                  onClick={handleCopyLink}
+                  className="flex min-h-[52px] flex-1 items-center justify-center gap-2 rounded-2xl border border-white/15 bg-transparent px-6 text-base font-medium text-slate-200 transition hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70"
+                >
+                  <Link2 className="h-5 w-5 shrink-0 text-cyan-300/90" aria-hidden />
+                  Linki kopyala
+                </motion.button>
+              </motion.div>
             </div>
           ) : null}
 
@@ -352,7 +393,11 @@ export default function ResultScreen({
             hesaplanmıştır. Yüksek puan daha avantajlı durumu ifade eder.
           </p>
 
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          {onOpenMethodology ? (
+            <SiteFooter onOpenMethodology={onOpenMethodology} />
+          ) : null}
+
+          <motion.div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <motion.button
               type="button"
               whileTap={{ scale: 0.98 }}
@@ -369,7 +414,7 @@ export default function ResultScreen({
             >
               Baştan başla
             </motion.button>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
       {/* Floating comparison bar */}
@@ -427,11 +472,13 @@ export default function ResultScreen({
       </AnimatePresence>
 
       {showComparison && comparisonDistricts.length >= 2 && (
-        <ComparisonModal
-          districts={comparisonDistricts}
-          questions={questions}
-          onClose={() => setShowComparison(false)}
-        />
+        <Suspense fallback={null}>
+          <ComparisonModal
+            districts={comparisonDistricts}
+            questions={questions}
+            onClose={() => setShowComparison(false)}
+          />
+        </Suspense>
       )}
     </>
   )

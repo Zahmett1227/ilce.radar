@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
 import { buildInsightPrompt } from '../utils/aiPrompt.js'
-import { analyzeWithGroq } from '../services/aiService.js'
+import { analyzeWithGroq, buildInsightCacheKey } from '../services/aiService.js'
+import { buildRankingSummarySentence } from '../utils/scoring.js'
 
 export default function AIInsightCard({
   profile,
@@ -27,6 +28,7 @@ export default function AIInsightCard({
     if (!districts?.length || !questions?.length) return
 
     let cancelled = false
+    /* eslint-disable react-hooks/set-state-in-effect -- fetch lifecycle reset */
     setText('')
     setLoading(true)
     setError(false)
@@ -40,7 +42,13 @@ export default function AIInsightCard({
           districts,
           selectedRegionLabels,
         })
-        const insightText = await analyzeWithGroq(prompt)
+        const cacheKey = buildInsightCacheKey({
+          districts,
+          answers,
+          questions,
+          selectedRegionLabels,
+        })
+        const insightText = await analyzeWithGroq(prompt, { cacheKey })
         if (cancelled) return
 
         if (!cancelled) {
@@ -49,7 +57,14 @@ export default function AIInsightCard({
         }
       } catch (err) {
         if (!cancelled) {
-          setError(err?.message ?? true)
+          const fallback = buildRankingSummarySentence(answers, questions)
+          if (fallback) {
+            setText(fallback)
+            onInsightReady?.(fallback)
+            setError(false)
+          } else {
+            setError(err?.message ?? true)
+          }
         }
       } finally {
         if (!cancelled) setLoading(false)

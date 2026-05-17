@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Sparkles, Waves, ShieldCheck, Trees, Scale, Wallet } from 'lucide-react'
+import SiteFooter from './SiteFooter.jsx'
 
 const CRITERIA = [
   { icon: Sparkles, label: 'Sosyal' },
@@ -19,7 +20,7 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } },
 }
 
-export default function StartScreen({ onStart }) {
+export default function StartScreen({ onStart, onOpenMethodology }) {
   return (
     <motion.div
       variants={container}
@@ -93,6 +94,8 @@ export default function StartScreen({ onStart }) {
           Bölge seçimi · 6 soru · Kişisel sonuç
         </p>
       </motion.div>
+
+      {onOpenMethodology ? <SiteFooter onOpenMethodology={onOpenMethodology} /> : null}
     </motion.div>
   )
 }

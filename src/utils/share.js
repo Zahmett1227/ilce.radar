@@ -33,12 +33,17 @@ export function createShareText(profile, topDistricts, selectedRegions) {
 
 /**
  * @param {string} text
+ * @param {{ url?: string }} [options]
  * @returns {Promise<'shared'|'copied'|'unavailable'>}
  */
-export async function shareResultText(text) {
+export async function shareResultText(text, options = {}) {
   if (typeof navigator !== 'undefined' && typeof navigator.share === 'function') {
     try {
-      await navigator.share({ title: 'İdeal İlçe Sonucum', text })
+      await navigator.share({
+        title: 'İdeal İlçe Sonucum',
+        text,
+        url: options.url,
+      })
       return 'shared'
     } catch {
       /* kullanıcı iptal */

@@ -21,7 +21,7 @@ export default defineConfig([
     },
   },
   {
-    files: ['scripts/**/*.js'],
+    files: ['scripts/**/*.js', 'api/**/*.js', 'vite.config.js', 'vite-groq-api-plugin.js'],
     extends: [js.configs.recommended],
     languageOptions: {
       globals: globals.node,
@@ -31,7 +31,7 @@ export default defineConfig([
   },
   {
     files: ['**/*.{js,jsx}'],
-    ignores: ['scripts/**', '**/*.test.js'],
+    ignores: ['scripts/**', 'api/**', 'vite.config.js', 'vite-groq-api-plugin.js', '**/*.test.js'],
     extends: [
       js.configs.recommended,
       reactHooks.configs.flat.recommended,
@@ -40,6 +40,9 @@ export default defineConfig([
     languageOptions: {
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
+    },
+    rules: {
+      'react-refresh/only-export-components': 'off',
     },
   },
 ])
