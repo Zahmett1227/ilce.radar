@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import IdealDistrictWizard from './pages/IdealDistrictWizard'
 import MethodologyPage from './pages/MethodologyPage'
 
@@ -29,8 +30,18 @@ export default function App() {
   }, [])
 
   if (route === 'methodology') {
-    return <MethodologyPage onBack={goHome} />
+    return (
+      <>
+        <MethodologyPage onBack={goHome} />
+        <Analytics />
+      </>
+    )
   }
 
-  return <IdealDistrictWizard onOpenMethodology={goMethodology} />
+  return (
+    <>
+      <IdealDistrictWizard onOpenMethodology={goMethodology} />
+      <Analytics />
+    </>
+  )
 }
