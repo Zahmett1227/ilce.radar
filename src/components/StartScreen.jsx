@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Sparkles, Waves, ShieldCheck, Trees, Scale, Wallet } from 'lucide-react'
 import SiteFooter from './SiteFooter.jsx'
+import AdUnit from './AdUnit.jsx'
 
 const CRITERIA = [
   { icon: Sparkles, label: 'Sosyal' },
@@ -95,7 +96,9 @@ export default function StartScreen({ onStart, onOpenMethodology }) {
         </p>
       </motion.div>
 
-      {onOpenMethodology ? <SiteFooter onOpenMethodology={onOpenMethodology} /> : null}
+      <AdUnit slot="1111111111" className="mt-8 w-full" />
+
+      <SiteFooter onOpenMethodology={onOpenMethodology} />
     </motion.div>
   )
 }

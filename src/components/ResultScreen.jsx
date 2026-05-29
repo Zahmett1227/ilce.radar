@@ -16,6 +16,7 @@ import { buildShareUrl } from '../utils/shareUrl.js'
 import { formatScore } from '../utils/formatters.js'
 import { useFavorites, districtKey } from '../hooks/useFavorites.js'
 import ResultFilters, { defaultFilters, MAX_RENT_LIMIT } from './ResultFilters.jsx'
+import AdUnit from './AdUnit.jsx'
 
 const DistrictMap = lazy(() => import('./DistrictMap.jsx'))
 const AIInsightCard = lazy(() => import('./AIInsightCard.jsx'))
@@ -209,6 +210,8 @@ export default function ResultScreen({
           <div className="mt-6 space-y-4">
             <LifeProfileCard profile={profile} />
           </div>
+
+          <AdUnit slot="2222222222" className="mt-6" />
 
           {isFilteredEmpty ? (
             <div className="mx-auto mt-10 max-w-md text-center">

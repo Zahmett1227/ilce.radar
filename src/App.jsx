@@ -1,11 +1,18 @@
 import { useCallback, useEffect, useState } from 'react'
 import IdealDistrictWizard from './pages/IdealDistrictWizard'
 import MethodologyPage from './pages/MethodologyPage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
+import AboutPage from './pages/AboutPage'
+import TermsPage from './pages/TermsPage'
+import CookieConsent from './components/CookieConsent'
 
 function getRoute() {
   if (typeof window === 'undefined') return 'home'
   const path = window.location.pathname.replace(/\/$/, '') || '/'
   if (path === '/veri' || path === '/metodoloji') return 'methodology'
+  if (path === '/gizlilik') return 'privacy'
+  if (path === '/hakkinda') return 'about'
+  if (path === '/kullanim-kosullari') return 'terms'
   return 'home'
 }
 
@@ -28,9 +35,17 @@ export default function App() {
     setRoute('methodology')
   }, [])
 
-  if (route === 'methodology') {
-    return <MethodologyPage onBack={goHome} />
-  }
+  let page
+  if (route === 'methodology') page = <MethodologyPage onBack={goHome} />
+  else if (route === 'privacy') page = <PrivacyPolicyPage onBack={goHome} />
+  else if (route === 'about') page = <AboutPage onBack={goHome} />
+  else if (route === 'terms') page = <TermsPage onBack={goHome} />
+  else page = <IdealDistrictWizard onOpenMethodology={goMethodology} />
 
-  return <IdealDistrictWizard onOpenMethodology={goMethodology} />
+  return (
+    <>
+      {page}
+      <CookieConsent />
+    </>
+  )
 }
