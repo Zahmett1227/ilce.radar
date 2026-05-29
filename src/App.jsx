@@ -5,6 +5,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 import AboutPage from './pages/AboutPage'
 import TermsPage from './pages/TermsPage'
 import CookieConsent from './components/CookieConsent'
+import ErrorBoundary from './components/ErrorBoundary'
 
 function getRoute() {
   if (typeof window === 'undefined') return 'home'
@@ -43,9 +44,9 @@ export default function App() {
   else page = <IdealDistrictWizard onOpenMethodology={goMethodology} />
 
   return (
-    <>
+    <ErrorBoundary>
       {page}
       <CookieConsent />
-    </>
+    </ErrorBoundary>
   )
 }

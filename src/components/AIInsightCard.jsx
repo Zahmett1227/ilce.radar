@@ -117,20 +117,9 @@ export default function AIInsightCard({
               animate={{ opacity: 1 }}
               className="text-sm leading-relaxed text-slate-500"
             >
-              {typeof error === 'string' ? error : 'Analiz yüklenemedi.'}{' '}
-              {typeof error === 'string' ? null : (
-                <>
-                  Yerelde{' '}
-                  <code className="rounded bg-slate-800 px-1 py-0.5 text-xs text-slate-300">
-                    .env
-                  </code>{' '}
-                  içinde{' '}
-                  <code className="rounded bg-slate-800 px-1 py-0.5 text-xs text-slate-300">
-                    GROQ_API_KEY
-                  </code>{' '}
-                  tanımlı olduğundan emin ol.
-                </>
-              )}
+              {typeof error === 'string' && error.length > 0
+                ? error
+                : 'Analiz şu an yüklenemiyor. Lütfen daha sonra tekrar dene.'}
             </motion.p>
           ) : loading && text === '' ? (
             <motion.div

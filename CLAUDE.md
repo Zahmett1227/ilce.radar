@@ -10,8 +10,8 @@ npm run dev          # start Vite dev server (also serves /api/analyze locally)
 npm run build        # production build
 npm run lint         # ESLint
 npm test             # run all unit tests (vitest run)
-npm run convert:districts  # regenerate districts.json + metricQuestions.json from Excel
-npm run fill:coords  # fill missing lat/lng in districts.json via geocoding script
+npm run convert:districts  # regenerate districts.json + metricQuestions.json from Excel (reads scripts/input/*.xlsx)
+npm run fill:coords  # fill missing lat/lng in districts.json (reads scripts/data/districts.backup.json)
 ```
 
 Run a single test file:
@@ -48,7 +48,7 @@ Questions are driven by `src/data/metricQuestions.json`, which is generated from
 
 ### District Data
 
-`src/data/districts.json` is generated from `src/data/ideal_ilce_genisletilmis.son.xlsx` (sheet: `districts_app`) via `scripts/convertDistrictExcelToJson.js`. The JSON wraps a `districts` array with `generatedAt` and `rowCount` metadata. Numeric columns are coerced; all others remain strings.
+`src/data/districts.json` is generated from `scripts/input/ideal_ilce_genisletilmis.son.xlsx` (sheet: `districts_app`) via `scripts/convertDistrictExcelToJson.js`. The JSON wraps a `districts` array with `generatedAt` and `rowCount` metadata. Numeric columns are coerced; all others remain strings. The backup coordinates source lives at `scripts/data/districts.backup.json` and is used by the fill-coords script only.
 
 ### AI Integration
 

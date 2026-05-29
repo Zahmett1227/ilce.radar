@@ -9,7 +9,7 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DISTRICTS_PATH = path.join(__dirname, '..', 'src', 'data', 'districts.json')
 const CENTROIDS_PATH = path.join(__dirname, '..', 'src', 'data', 'ilCentroids.json')
-const BACKUP_PATH = path.join(__dirname, '..', 'src', 'data', 'districts.backup.json')
+const BACKUP_PATH = path.join(__dirname, '..', 'scripts', 'data', 'districts.backup.json')
 
 function loadJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'))

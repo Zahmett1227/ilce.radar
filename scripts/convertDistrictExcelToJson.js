@@ -6,7 +6,7 @@ import xlsx from 'xlsx'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.join(__dirname, '..')
 
-const DEFAULT_INPUT = path.join(rootDir, 'src', 'data', 'ideal_ilce_genisletilmis.son.xlsx')
+const DEFAULT_INPUT = path.join(rootDir, 'scripts', 'input', 'ideal_ilce_genisletilmis.son.xlsx')
 const INPUT = process.argv[2] ? path.resolve(process.argv[2]) : DEFAULT_INPUT
 const OUTPUT = path.join(rootDir, 'src', 'data', 'districts.json')
 const METRIC_OUTPUT = path.join(rootDir, 'src', 'data', 'metricQuestions.json')

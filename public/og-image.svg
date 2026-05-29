@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glowTop" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#050810" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="100%" cy="0%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#050810" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#94a3b8" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#050810"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect width="1200" height="630" fill="url(#glowTop)"/>
+  <rect width="1200" height="630" fill="url(#glowRight)"/>
+
+  <!-- Brand badge -->
+  <rect x="476" y="148" width="248" height="38" rx="19" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.25" stroke-width="1"/>
+  <circle cx="498" cy="167" r="5" fill="#34d399"/>
+  <text x="514" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" letter-spacing="2.5" fill="#34d399">İLÇE RADAR</text>
+
+  <!-- Main heading line 1 -->
+  <text x="600" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="80" font-weight="800" fill="white" text-anchor="middle" letter-spacing="-1">İdeal İlçeni</text>
+
+  <!-- Main heading line 2 – gradient -->
+  <text x="600" y="378" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="80" font-weight="800" fill="url(#titleGrad)" text-anchor="middle" letter-spacing="-1">Birlikte Bulalım</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#94a3b8" text-anchor="middle" letter-spacing="0.3">249 ilçe · 6 kriter · Yapay zeka destekli kişisel analiz</text>
+
+  <!-- Divider dots -->
+  <circle cx="580" cy="496" r="2.5" fill="#1e293b"/>
+  <circle cx="600" cy="496" r="2.5" fill="#334155"/>
+  <circle cx="620" cy="496" r="2.5" fill="#1e293b"/>
+
+  <!-- Domain -->
+  <text x="600" y="548" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" fill="#475569" text-anchor="middle" letter-spacing="1">ilce.radar</text>
+</svg>

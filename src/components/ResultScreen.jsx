@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowLeftRight, Bookmark, Link2, Share2, X } from 'lucide-react'
 import LifeProfileCard from './LifeProfileCard.jsx'
 import ResultCard from './ResultCard.jsx'
+import ErrorBoundary from './ErrorBoundary.jsx'
 import Toast from './Toast.jsx'
 import SiteFooter from './SiteFooter.jsx'
 import { getLifeProfile } from '../utils/profile.js'
@@ -160,9 +161,11 @@ export default function ResultScreen({
 
           {allDistricts?.length > 0 && districts.length > 0 && (
             <div className="mt-6">
-              <Suspense fallback={<PanelFallback label="Harita" />}>
-                <DistrictMap allDistricts={allDistricts} topDistricts={districts} />
-              </Suspense>
+              <ErrorBoundary>
+                <Suspense fallback={<PanelFallback label="Harita" />}>
+                  <DistrictMap allDistricts={allDistricts} topDistricts={districts} />
+                </Suspense>
+              </ErrorBoundary>
               <p className="mt-2 text-center text-xs text-slate-500">
                 Yeşil = yüksek uyum · Sarı = orta · Kırmızı = düşük · Beyaz halka = senin için önerilen
               </p>
@@ -276,26 +279,30 @@ export default function ResultScreen({
 
           {filteredDistricts.length > 0 && (
             <div className="mt-8 space-y-4">
-              <Suspense fallback={<PanelFallback label="Yapay zeka analizi" />}>
-                <AIInsightCard
-                  profile={profile}
-                  answers={answers}
-                  questions={questions}
-                  districts={filteredDistricts}
-                  selectedRegionLabels={regionPillLabels}
-                  onInsightReady={setInsightText}
-                />
-              </Suspense>
-              <Suspense fallback={<PanelFallback label="Sohbet" />}>
-                <AIChatPanel
-                  profile={profile}
-                  answers={answers}
-                  questions={questions}
-                  districts={filteredDistricts}
-                  selectedRegionLabels={regionPillLabels}
-                  insightText={insightText}
-                />
-              </Suspense>
+              <ErrorBoundary>
+                <Suspense fallback={<PanelFallback label="Yapay zeka analizi" />}>
+                  <AIInsightCard
+                    profile={profile}
+                    answers={answers}
+                    questions={questions}
+                    districts={filteredDistricts}
+                    selectedRegionLabels={regionPillLabels}
+                    onInsightReady={setInsightText}
+                  />
+                </Suspense>
+              </ErrorBoundary>
+              <ErrorBoundary>
+                <Suspense fallback={<PanelFallback label="Sohbet" />}>
+                  <AIChatPanel
+                    profile={profile}
+                    answers={answers}
+                    questions={questions}
+                    districts={filteredDistricts}
+                    selectedRegionLabels={regionPillLabels}
+                    insightText={insightText}
+                  />
+                </Suspense>
+              </ErrorBoundary>
             </div>
           )}
 
