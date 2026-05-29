@@ -31,6 +31,27 @@
     />
     <!-- Twitter/X requires PNG. Export og-image.svg as og-image.png and update og:image to .png for full X support. -->
     <meta name="twitter:image" content="https://ilce.radar/og-image.svg" />
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="İlçe Radar" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "İlçe Radar",
+      "url": "https://ilce.radar/",
+      "description": "Önceliklerine göre Türkiye'de sana en uygun ilçeleri keşfet. 6 kriter, bölge filtresi ve yapay zeka destekli kişisel analiz.",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

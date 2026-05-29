@@ -1,0 +1,20 @@
+{
+  "name": "İlçe Radar",
+  "short_name": "İlçe Radar",
+  "description": "Önceliklerine göre Türkiye'de sana en uygun ilçeleri keşfet.",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050810",
+  "theme_color": "#050810",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["utilities", "lifestyle"]
+}
