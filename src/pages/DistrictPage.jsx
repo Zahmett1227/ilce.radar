@@ -55,9 +55,26 @@ function navigateHome() {
   window.dispatchEvent(new PopStateEvent('popstate'))
 }
 
+const BASE_URL = 'https://ilceradar.vercel.app'
 const DEFAULT_TITLE = 'İlçe Radar — İdeal ilçeni bul'
 const DEFAULT_DESC =
   "Önceliklerine göre Türkiye'de sana en uygun ilçeleri keşfet. 6 kriter, bölge filtresi ve yapay zeka destekli kişisel analiz."
+const DEFAULT_URL = `${BASE_URL}/`
+
+function setMetaContent(selector, content) {
+  const el = document.querySelector(selector)
+  if (el) el.setAttribute('content', content)
+}
+
+function setCanonical(href) {
+  let el = document.querySelector('link[rel="canonical"]')
+  if (!el) {
+    el = document.createElement('link')
+    el.rel = 'canonical'
+    document.head.appendChild(el)
+  }
+  el.href = href
+}
 
 export default function DistrictPage({ onHome }) {
   const districtId = useMemo(() => {
@@ -76,16 +93,29 @@ export default function DistrictPage({ onHome }) {
       document.title = 'İlçe bulunamadı — İlçe Radar'
       return
     }
-    document.title = `${district.ilce} / ${district.il} — İlçe Radar`
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) {
-      const kira = district.avg_rent_try ? formatTRY(district.avg_rent_try) : '?'
-      metaDesc.content = `${district.ilce} (${district.il}) ilçe analizi: ${district.sea_category ?? ''}, deprem riski ${district.earthquake_risk_band ?? ''}, ortalama kira ${kira} TL. İlçe Radar ile kendi uyumunu keşfet.`
-    }
+    const pageUrl = `${BASE_URL}/ilce/${district.district_id}`
+    const pageTitle = `${district.ilce} / ${district.il} — İlçe Radar`
+    const kira = district.avg_rent_try ? formatTRY(district.avg_rent_try) : '?'
+    const pageDesc = `${district.ilce} (${district.il}) ilçe analizi: ${district.sea_category ?? ''}, deprem riski ${district.earthquake_risk_band ?? ''}, ortalama kira ${kira} TL. İlçe Radar ile kendi uyumunu keşfet.`
+
+    document.title = pageTitle
+    setCanonical(pageUrl)
+    setMetaContent('meta[name="description"]', pageDesc)
+    setMetaContent('meta[property="og:url"]', pageUrl)
+    setMetaContent('meta[property="og:title"]', pageTitle)
+    setMetaContent('meta[property="og:description"]', pageDesc)
+    setMetaContent('meta[name="twitter:title"]', pageTitle)
+    setMetaContent('meta[name="twitter:description"]', pageDesc)
+
     return () => {
       document.title = DEFAULT_TITLE
-      const m = document.querySelector('meta[name="description"]')
-      if (m) m.content = DEFAULT_DESC
+      setCanonical(DEFAULT_URL)
+      setMetaContent('meta[name="description"]', DEFAULT_DESC)
+      setMetaContent('meta[property="og:url"]', DEFAULT_URL)
+      setMetaContent('meta[property="og:title"]', DEFAULT_TITLE)
+      setMetaContent('meta[property="og:description"]', DEFAULT_DESC)
+      setMetaContent('meta[name="twitter:title"]', DEFAULT_TITLE)
+      setMetaContent('meta[name="twitter:description"]', DEFAULT_DESC)
     }
   }, [district])
 
